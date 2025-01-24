@@ -18,7 +18,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: 'Drafts.az',
-  description: 'IT consulting and breding'
+  description: 'IT consulting and breding',
 }
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${inter.variable} antialiased`}
+        className={`${geistSans.variable} ${inter.variable} antialiased bg-[#151515]` }
       >
         <div className="w-[1224px] mx-auto">
           <Header />

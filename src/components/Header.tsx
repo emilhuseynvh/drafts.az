@@ -2,17 +2,16 @@ import Image from 'next/image';
 import React from 'react';
 import logo from '../../public/logo.svg';
 import Button from './ui/Button';
-
 const Header: React.FC = () => {
   return (
     <header className='flex items-center mt-6 justify-between'>
       <div className='flex items-center'>
-        <Image src={logo} alt='Logo' width={158} height={52} />
+        <Image className='cursor-pointer' src={logo} alt='Logo' width={158} height={52} />
         <ul className='flex ml-16 gap-9 text-white font-normal leading-6 text-base'>
-          <li className='cursor-pointer text'>Services</li>
-          <li className='cursor-pointer text'>Work</li>
-          <li className='cursor-pointer text'>About</li>
-          <li className='cursor-pointer text'>Contact</li>
+          <li className='cursor-pointer text-after relative'>Services</li>
+          <li className='cursor-pointer text-after relative'>Work</li>
+          <li className='cursor-pointer text-after relative'>About</li>
+          <li className='cursor-pointer text-after relative'>Contact</li>
         </ul>
       </div>
       <Button>
@@ -27,4 +26,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default Header;  

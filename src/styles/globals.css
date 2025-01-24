@@ -1,28 +1,22 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-body {
-    background-color: #151515;
-}
-:root{ --primary: #DB3D3E }
+@theme { --color-primary : #DB3D3E}
 
-.text{ position: relative;}
-
-.text::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translateX(-2px);
-    width: 0;
-    height: 1px;
-    bottom: -5px;
-    left: 0;
-    background-color: var(--primary);
-    transition: width 0.4s ease;
-}
-
-.text:hover::after {
-    width: 110%;
+@layer utilities {
+    .text-after::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-2px);
+        width: 0;
+        height: 1px;
+        bottom: -5px;
+        left: 0;
+        background-color: var(--color-primary);
+        transition: width 0.4s ease;
+    }
+    .text-after:hover::after {
+        width: 110%;
+    }
 }
