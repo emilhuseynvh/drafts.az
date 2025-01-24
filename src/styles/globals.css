@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-@theme { --color-primary : #DB3D3E}
+@theme {
+    --color-primary: #DB3D3E
+}
 
 @layer utilities {
     .text-after::after {
@@ -16,7 +18,9 @@
         background-color: var(--color-primary);
         transition: width 0.4s ease;
     }
+
     .text-after:hover::after {
         width: 110%;
     }
+    .border-t-l-4 { border-top-left-radius: 16px;}
 }

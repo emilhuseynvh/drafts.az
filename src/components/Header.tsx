@@ -6,7 +6,7 @@ const Header: React.FC = () => {
   return (
     <header className='flex items-center mt-6 justify-between'>
       <div className='flex items-center'>
-        <Image className='cursor-pointer' src={logo} alt='Logo' width={158} height={52} />
+        <Image  className='cursor-pointer' src={logo} alt='Logo' width={158} height={52} />
         <ul className='flex ml-16 gap-9 text-white font-normal leading-6 text-base'>
           <li className='cursor-pointer text-after relative'>Services</li>
           <li className='cursor-pointer text-after relative'>Work</li>

@@ -1,9 +1,9 @@
-import { ChildrenProps } from '@/types/children-prop.dto';
+import { ButtonProps } from '@/types/children-prop.dto';
 import React from 'react';
 
-const Button: React.FC<ChildrenProps> = ({ children }) => {
+const Button: React.FC<ButtonProps> = ({ children, bgColor }) => {
   return (
-    <button className='cursor-pointer bg-white relative flex justify-center overflow-hidden group rounded-xl h-12 gap-2 items-center w-[271px]'>
+    <button style={{backgroundColor: bgColor}} className={` cursor-pointer bg-white relative flex justify-center overflow-hidden group rounded-xl h-12 gap-2 items-center w-[271px]`}>
       {children}
       <div className='size-20 duration-[700ms] rounded-[50%] absolute bg-primary group-hover:top-1/2 group-hover:-translate-y-1/2 top-[-80px] left-0'></div>
       <div className='size-20 duration-[700ms] rounded-[50%] absolute bg-primary group-hover:top-1/2 group-hover:-translate-y-1/2 top-[-80px] left-[64px]'></div>
