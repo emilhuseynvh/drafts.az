@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import Button from "./ui/Button";
-import CallIcon from "../../public/icons/Phone, Call.svg";
 import PlusIcon from "../../public/icons/Plus.svg";
 import Image from "next/image";
 
