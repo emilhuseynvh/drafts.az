@@ -1,3 +1,4 @@
+import Hero from '@/components/Hero';
 import Services from '@/components/services';
 import { Metadata } from 'next';
 import React from 'react'
@@ -41,6 +42,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
+      <Hero />
       <Services />
     </div>
   )
