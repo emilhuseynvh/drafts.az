@@ -1,3 +1,4 @@
+import Hero from '@/components/Hero';
 import Services from '@/components/services';
 import Button from '@/components/ui/Button';
 import { Metadata } from 'next';
@@ -41,6 +42,8 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
+    <div>
+      <Hero />
     <div className='wrapper'>
       <div className='flex justify-between items-start my-[60px] flex-col xs:flex-row'>
         <div className="flex items-center space-x-3 pb-7 xs:py-0">
@@ -58,7 +61,6 @@ const page = () => {
                 <path className='group-hover:stroke-white' d="M16.9508 7.0498L7.05078 16.9498" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 <path className='group-hover:stroke-white' d="M10 7L16.95 7.049L17 14" stroke="#111213" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
-
             </Button>
           </div>
         </div>
