@@ -45,11 +45,11 @@ const Footer = () => {
               <p className='text-xs font-normal text-[#3D3D3D] mb-4'>Contact</p>
               <ul>
                 <li className='flex gap-3 my-1.5'>
-                  <Image src={phoneIcon} alt='Drafts.az footer phone icon' />
+                  <Image src={phoneIcon} width={24} height={24} alt='Drafts.az footer phone icon' />
                   <p>(050) 800 64 04</p>
                 </li>
                 <li className='flex gap-3 my-1.5'>
-                  <Image src={mailIcon} alt='Drafts.az footer mail icon' />
+                  <Image width={24} height={24} src={mailIcon} alt='Drafts.az footer mail icon' />
                   <p>info@drafts.az</p>
                 </li>
               </ul>
@@ -73,13 +73,13 @@ const Footer = () => {
         </div>
         <div className='absolute top-10 right-4'>
           <div className='bg-primary-bg p-1 hover:bg-primary duration-300 rounded-xl my-2 cursor-pointer'>
-            <Image className='size-6' src={instagramIcon} alt='Drafts.az instagram icon' />
+            <Image src={instagramIcon} width={24} height={24} alt='Drafts.az instagram icon' />
           </div>
           <div className='bg-primary-bg p-1 hover:bg-primary duration-300 rounded-xl my-2 cursor-pointer'>
-            <Image className='size-6' src={linkedinIcon} alt='Drafts.az linkedin icon' />
+            <Image  src={linkedinIcon} alt='Drafts.az linkedin icon' width={24} height={24} />
           </div>
           <div className='bg-primary-bg p-1 hover:bg-primary duration-300 rounded-xl my-2 cursor-pointer'>
-            <Image className='size-6' src={behanceIcon} alt='Drafts.az linkedin icon' />
+            <Image  src={behanceIcon} alt='Drafts.az linkedin icon' width={24} height={24} />
           </div>
         </div>
       </div>

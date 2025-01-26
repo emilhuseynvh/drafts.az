@@ -73,84 +73,96 @@ const Services: React.FC = () => {
         <div className="mt-36">
             <div className="wrapper flex justify-between items-start">
                 <div className="flex items-center space-x-3">
+            <div className="flex flex-col xs:flex-row justify-between items-start">
+                <div className="flex items-center space-x-3 mb-7 xs:mb-0">
                     <div className="w-2 h-2 rounded-full bg-[#F7F7F1]"></div>
                     <span className="text-lg text-[#F7F7F1]">Services</span>
                 </div>
                 <div className="max-w-2xl">
-                    <div className="flex gap-[80px]">
-                        <div>
-                            <p className="text-[#AAA] text-2xl leading-8">
+                    <div className="flex justify-end md:gap-10 lg:gap-[80px]">
+                        <div className="md:w-[40%] lg:w-full">
+                            <p className="hidden md:block  text-[#AAA] text-2xl leading-8">
                                 How we take your business to the next level
                             </p>
                         </div>
                         <div>
-                            <div className="max-w-80 w-full flex flex-col items-start gap-7">
-                                <p className="text-[#AAA] text-xs leading-6">
+                            <div className="max-w-64 md:max-w-80 w-full flex flex-col items-start gap-7">
+                                <p className="text-[#AAA] text-sm leading-6">
                                     We are an agency distinguished by our professionalism, and we are
                                     committed to helping you take your business to the next level.
                                 </p>
-                                <Button>
+                                <Button width="200px">
                                     <p className="z-10 group-hover:text-white">See all services</p>
-                                    <svg className="z-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path className="group-hover:stroke-white" fillRule="evenodd" clipRule="evenodd"
-                                            d="M10.131 13.869C8.96102 12.699 8.07902 11.389 7.49302 10.06C7.37002 9.77897 7.44202 9.44997 7.65902 9.23297L8.47802 8.41397C9.14902 7.74297 9.14902 6.79397 8.56302 6.20797L7.39002 5.03497C6.60902 4.25397 5.34302 4.25397 4.56202 5.03497L3.91002 5.68597C3.16902 6.42697 2.86002 7.49597 3.06002 8.55597C3.55402 11.169 5.07202 14.03 7.52102 16.479C9.97002 18.928 12.831 20.446 15.444 20.94C16.504 21.14 17.573 20.831 18.314 20.09L18.965 19.439C19.746 18.658 19.746 17.392 18.965 16.611L17.792 15.438C17.206 14.852 16.256 14.852 15.671 15.438L14.768 16.342C14.551 16.559 14.222 16.632 13.941 16.508C12.612 15.921 11.301 15.038 10.131 13.869Z"
-                                            stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path className="group-hover:stroke-white" d="M15 3V9H21" stroke="#151515" strokeWidth="1.5" strokeLinecap="round"
-                                            strokeLinejoin="round" />
-                                        <path className="group-hover:stroke-white" d="M21 3L15 9" stroke="#151515" strokeWidth="1.5" strokeLinecap="round"
-                                            strokeLinejoin="round" />
+                                    <svg className="hidden md:block z-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="Group">
+                                            <g id="Group_2">
+                                                <path className="group-hover:stroke-white" id="Path" d="M16.9508 16.9498L7.05078 7.0498" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path className="group-hover:stroke-white" id="Path_2" d="M16.9509 9.87695V16.95L9.87891 16.949" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                            </g>
+                                        </g>
+                                    </svg>
+
+                                    <svg className="z-10 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                        <path className="group-hover:stroke-white" d="M9.924 6.5H10C13.314 6.5 16 9.186 16 12.5V13.919V18.5" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path className="group-hover:stroke-white" d="M9.92001 6.5L5.00001 6.5" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path className="group-hover:stroke-white" d="M13 15.5L16 18.5L19 15.5" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </Button>
                             </div>
                         </div>
                     </div>
-                    <div className="mt-20">
-                        {servicesAccordion.map((item, index) => (
-                            <div
-                                onClick={() => handleToggle(index)}
-                                className="mb-6 cursor-pointer group"
-                                key={index}
-                            >
-                                <div className="flex items-start gap-11">
-                                    <div>
-                                        <span className="text-white">.0{index + 1}</span>
-                                    </div>
-                                    <div className="w-full">
-                                        <div className="pb-8">
-                                            <div className="flex justify-between items-center">
-                                                <h2 className="text-[#F7F7F1] text-[56px]">{item.title}</h2>
-                                                <Image
-                                                    src={PlusIcon}
-                                                    alt="Accordion toggle icon"
-                                                    className={`transition-transform duration-700 origin-top-left ${activeIndex === index ? "rotate-45" : ""
-                                                        }`}
-                                                />
-                                            </div>
-                                            <div
-                                                className={`overflow-hidden transition-[max-height]  ease-linear duration-700 ${activeIndex === index ? "max-h-screen" : "max-h-0"
+
+                </div>
+
+            </div>
+            <div className="w-full flex justify-between">
+                <div></div>
+                <div className="mt-20 max-w-2xl">
+                    {servicesAccordion.map((item, index) => (
+                        <div
+                            onClick={() => handleToggle(index)}
+                            className="mb-6 cursor-pointer group"
+                            key={index}
+                        >
+                            <div className="flex items-start gap-5 md:gap-11">
+                                <div>
+                                    <span className="text-white">.0{index + 1}</span>
+                                </div>
+                                <div className="w-full">
+                                    <div className="pb-8">
+                                        <div className="flex justify-between items-center">
+                                            <h2 className="text-[#F7F7F1]  text-3xl md:text-[56px]">{item.title}</h2>
+                                            <Image
+                                                src={PlusIcon}
+                                                alt="Accordion toggle icon"
+                                                className={`transition-transform duration-700 origin-top-left w-5 h-5 md:w-8 md:h-8 ${activeIndex === index ? "rotate-45" : ""
                                                     }`}
-                                            >
-                                                <p className="text-[#AAA] py-8">{item.content}</p>
-                                                <ul className="flex flex-wrap gap-3">
-                                                    {item.buttons.map((list, listIndex) => (
-                                                        <li
-                                                            key={listIndex}
-                                                            className="uppercase bg-[#F7F7F1] rounded-full px-4 py-2 leading-6"
-                                                        >
-                                                            {list}
-                                                        </li>
-                                                    ))}
-                                                </ul>
-                                            </div>
+                                            />
                                         </div>
-                                        <div className="w-full h-[2px] bg-[#F7F7F1]  duration-500">
-                                            <div className="w-0 h-full duration-1000 ease-in-out group-hover:bg-red-500 group-hover:w-full "></div>
+                                        <div
+                                            className={`overflow-hidden transition-[max-height]  ease-linear duration-700 ${activeIndex === index ? "max-h-screen" : "max-h-0"
+                                                }`}
+                                        >
+                                            <p className="text-[#AAA] py-8">{item.content}</p>
+                                            <ul className="flex flex-wrap gap-3">
+                                                {item.buttons.map((list, listIndex) => (
+                                                    <li
+                                                        key={listIndex}
+                                                        className="uppercase bg-[#F7F7F1] rounded-full px-4 py-2 leading-6"
+                                                    >
+                                                        {list}
+                                                    </li>
+                                                ))}
+                                            </ul>
                                         </div>
+                                    </div>
+                                    <div className="w-full h-[2px] bg-[#F7F7F1]  duration-500">
+                                        <div className="w-0 h-full duration-1000 ease-in-out group-hover:bg-red-500 group-hover:w-full "></div>
                                     </div>
                                 </div>
                             </div>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
