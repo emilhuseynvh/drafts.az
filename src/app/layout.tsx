@@ -31,7 +31,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${inter.variable} antialiased bg-[#151515]` }
       >
-        <div>
+        <div className="mx-auto">
           <Header />
           {children}
           <Footer />

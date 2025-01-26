@@ -71,7 +71,7 @@ const Services: React.FC = () => {
 
     return (
         <div className="mt-36">
-            <div className="wrapper flex justify-between items-start">
+            <div className="container flex justify-between items-start">
                 <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 rounded-full bg-[#F7F7F1]"></div>
                     <span className="text-lg text-[#F7F7F1]">Services</span>

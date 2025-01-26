@@ -7,20 +7,20 @@
 }
 
 @layer utilities {
-    .wrapper {
+    .container {
         @apply mx-auto px-4 sm:px-6 lg:px-8;
         width: 100%;
     }
 
     @media (min-width: 640px) {
-        .wrapper {
+        .container {
             max-width: 640px;
         }
     }
 
     @media (min-width: 768px) {
-        .wrapper {
-            max-width: 1400px;
+        .container {
+            max-width: 1224px;
         }
     }
 }
@@ -46,7 +46,4 @@
         width: 110%;
     }
     .border-t-l-4 { border-top-left-radius: 16px;}
-    .border-b-r-4 { border-bottom-right-radius: 16px;}
-    .border-b-l-4 { border-bottom-left-radius: 16px; }
-    .border-t-r-4 { border-top-right-radius: 16px; }
 }
