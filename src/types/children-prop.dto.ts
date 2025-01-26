@@ -4,4 +4,5 @@ export interface ChildrenProps  {
 
 export interface ButtonProps extends ChildrenProps {
     bgColor?: string | '#fff'
+    width?: string | '271px'
 }
