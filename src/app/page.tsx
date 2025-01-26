@@ -41,6 +41,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
+<<<<<<< HEAD
     <div className='wrapper'>
       <div className='flex justify-between items-start my-[60px] flex-col xs:flex-row'>
         <div className="flex items-center space-x-3 pb-7 xs:py-0">
@@ -63,6 +64,9 @@ const page = () => {
           </div>
         </div>
       </div>
+=======
+    <div>
+>>>>>>> parent of 10fb255 (hero section added)
       <Services />
     </div>
   )
