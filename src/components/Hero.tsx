@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
   const [flag, setFlag] = useState(false);
   return (
     <div className='relative md:mt-0 mt-16'>
-      <div onClick={() => setFlag(!flag)} className={`absolute md:block hidden duration-300 transition-[height] z-50 right-[25%] select-none py-2 px-3 ${!flag ? 'h-10' : 'h-30'} overflow-hidden rounded-xl top-2 bg-white`}>
+      <div onClick={() => setFlag(!flag)} className={`absolute lg:block hidden duration-300 transition-[height] z-50 right-[25%] select-none py-2 px-3 ${!flag ? 'h-10' : 'h-30'} overflow-hidden rounded-xl top-2 bg-white`}>
         <div className='flex gap-1.5 cursor-pointer'>
           <Image src={lang} alt='Drafts.az language switchment selection' />
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
