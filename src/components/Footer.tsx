@@ -11,7 +11,7 @@ import behanceIcon from './../../public/icons/behance.svg';
 const Footer = () => {
   return (
     <footer className='mt-36'>
-      <div className='wrapper rounded-2xl bg-[#F7F7F1] pl-6 pr-4 pt-12 pb-7 relative'>
+      <div className='container rounded-2xl bg-[#F7F7F1] pl-6 pr-4 pt-12 pb-7 relative'>
         <div className='w-full flex justify-between'>
           <div className='w-1/2'>
             <ul className='list-disc ml-4'>
