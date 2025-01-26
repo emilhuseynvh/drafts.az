@@ -2,8 +2,30 @@
 
 @theme {
     --color-primary: #DB3D3E;
-    --color-primary-bg: #151515
+    --color-primary-bg: #151515;
+    --color-primary-white: #F7F7F1
 }
+
+@layer utilities {
+    .container {
+        @apply mx-auto px-4 sm:px-6 lg:px-8;
+        width: 100%;
+    }
+
+    @media (min-width: 640px) {
+        .container {
+            max-width: 640px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            max-width: 1224px;
+        }
+    }
+}
+
+
 
 @layer utilities {
     .text-after::after {
