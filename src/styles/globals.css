@@ -3,24 +3,25 @@
 @theme {
     --color-primary: #DB3D3E;
     --color-primary-bg: #151515;
-    --color-primary-white: #F7F7F1
+    --color-primary-white: #F7F7F1;
+    --breakpoint-xs: 25rem
 }
 
 @layer utilities {
-    .container {
+    .wrapper {
         @apply mx-auto px-4 sm:px-6 lg:px-8;
         width: 100%;
     }
 
     @media (min-width: 640px) {
-        .container {
+        .wrapper {
             max-width: 640px;
         }
     }
 
     @media (min-width: 768px) {
-        .container {
-            max-width: 1224px;
+        .wrapper {
+            max-width: 1400px;
         }
     }
 }
