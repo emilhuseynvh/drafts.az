@@ -11,8 +11,8 @@ import en from './../../public/icons/en.svg'
 const Hero: React.FC = () => {
   const [flag, setFlag] = useState(false);
   return (
-    <div className='wrapper relative md:mt-0 mt-16'>
-      <div onClick={() => setFlag(!flag)} className={`absolute duration-300 transition-[height] z-50 right-[25%] select-none py-2 px-3 ${flag ? 'h-10' : 'h-30'} overflow-hidden rounded-xl top-2 bg-white`}>
+    <div className='relative md:mt-0 mt-16'>
+      <div onClick={() => setFlag(!flag)} className={`absolute md:block hidden duration-300 transition-[height] z-50 right-[25%] select-none py-2 px-3 ${!flag ? 'h-10' : 'h-30'} overflow-hidden rounded-xl top-2 bg-white`}>
         <div className='flex gap-1.5 cursor-pointer'>
           <Image src={lang} alt='Drafts.az language switchment selection' />
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
         Your browser does not support the video tag.
       </video>
 
-      <div className='lg:w-[274] w-[196px] absolute bottom-[-8px] left-6  md:block hidden bg-primary-bg px-3 pt-3.5 pb-3 border-t-r-4'>
+      <div className='lg:w-[274] w-[196px] absolute bottom-[-8px] left-[-8px]  md:block hidden bg-primary-bg px-3 pt-3.5 pb-3 border-t-r-4'>
         <svg className='absolute size-[14px]  bottom-[8px] right-[-14px] rotate-90' width="200" height="200" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
           <path className='absoulte fill-[#151515]' d="M 0 100 Q 95 95, 100 0 L 100 100 Z" stroke="#151515" fill="none" strokeWidth="2" />
         </svg>
