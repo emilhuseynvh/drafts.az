@@ -6,7 +6,7 @@ import Button from './ui/Button';
 const Header: React.FC = () => {
   return (
     <header className='md:pt-6 md:h-auto h-17 md:bg-transparent bg-primary-white'>
-      <div className='container h-full flex items-center justify-between'>
+      <div className='wrapper h-full flex items-center justify-between'>
         <div className='flex items-center'>
           <Image className='cursor-pointer md:block hidden' src={logo} alt='Logo' width={158} height={52} />
           <Image className='cursor-pointer md:hidden block' src={logoBlack} alt='Logo' width={100} height={36} />
