@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero';
 import Services from '@/components/services';
 import Button from '@/components/ui/Button';
+import FaqAccordion from '../components/FaqAccordion'
 import { Metadata } from 'next';
 import React from 'react'
 
@@ -66,6 +67,9 @@ const page = () => {
         </div>
       </div>
       <Services />
+      <div>
+        <FaqAccordion />
+      </div>
     </div>
   )
 }

@@ -2,8 +2,7 @@
 
 import React, { useState } from "react";
 import Button from "./ui/Button";
-import PlusIcon from "../../public/icons/Plus.svg";
-import Image from "next/image";
+import Accordion from './ui/Accordion'
 
 interface AccordionItem {
     title: string;
@@ -117,49 +116,13 @@ const Services: React.FC = () => {
                 <div></div>
                 <div className="mt-20 max-w-2xl">
                     {servicesAccordion.map((item, index) => (
-                        <div
-                            onClick={() => handleToggle(index)}
-                            className="mb-6 cursor-pointer group"
+                        <Accordion
                             key={index}
-                        >
-                            <div className="flex items-start gap-5 md:gap-11">
-                                <div>
-                                    <span className="text-white">.0{index + 1}</span>
-                                </div>
-                                <div className="w-full">
-                                    <div className="pb-8">
-                                        <div className="flex justify-between items-center">
-                                            <h2 className="text-[#F7F7F1]  text-3xl md:text-[56px]">{item.title}</h2>
-                                            <Image
-                                                src={PlusIcon}
-                                                alt="Accordion toggle icon"
-                                                className={`transition-transform duration-700 origin-top-left w-5 h-5 md:w-8 md:h-8 ${activeIndex === index ? "rotate-45" : ""
-                                                    }`}
-                                            />
-                                        </div>
-                                        <div
-                                            className={`overflow-hidden transition-[max-height]  ease-linear duration-700 ${activeIndex === index ? "max-h-screen" : "max-h-0"
-                                                }`}
-                                        >
-                                            <p className="text-[#AAA] py-8">{item.content}</p>
-                                            <ul className="flex flex-wrap gap-3">
-                                                {item.buttons.map((list, listIndex) => (
-                                                    <li
-                                                        key={listIndex}
-                                                        className="uppercase bg-[#F7F7F1] rounded-full px-4 py-2 leading-6"
-                                                    >
-                                                        {list}
-                                                    </li>
-                                                ))}
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div className="w-full h-[2px] bg-[#F7F7F1]  duration-500">
-                                        <div className="w-0 h-full duration-1000 ease-in-out group-hover:bg-red-500 group-hover:w-full "></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            item={item}
+                            handleFunction={handleToggle}
+                            activeIndex={activeIndex}
+                            index={index}
+                            faq={false} />
                     ))}
                 </div>
             </div>
