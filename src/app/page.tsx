@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero';
+import OurWork from '@/components/OurWork';
 import Services from '@/components/services';
 import Button from '@/components/ui/Button';
 import { Metadata } from 'next';
@@ -65,6 +66,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <OurWork />
       <Services />
     </div>
   )
