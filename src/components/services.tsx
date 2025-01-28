@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Button from "./ui/Button";
-import Accordion from './ui/Accordion'
+import Accordion from './ui/Accordion';
 
 interface AccordionItem {
     title: string;
@@ -122,6 +122,7 @@ const Services: React.FC = () => {
                             handleFunction={handleToggle}
                             activeIndex={activeIndex}
                             index={index}
+                            title={''} firstContent={''} secondContent={''}
                             faq={false} />
                     ))}
                 </div>

@@ -6,9 +6,9 @@ import { AccordionItem } from '@/types/accordion-prop.dto';
 
 interface AccordionProps extends AccordionItem {
     item: {
-        title: string;
-        firstContent: string;
-        secondContent: string;
+        title?: string;
+        firstContent?: string;
+        secondContent?: string;
         content?: string;
         buttons?: string[];
     },
