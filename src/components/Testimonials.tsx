@@ -8,8 +8,6 @@ import { Pagination, Navigation } from 'swiper/modules';
 import userImage from '../../public/icons/Frame826.png'
 import Image from 'next/image';
 export default function Testimonials() {
-    const [swiperRef, setSwiperRef] = useState(null);
-
     const testimonialsArr = [
         {
             text: 'Lorem ipsum dolor sit amet consectetur. Nisl tincidunt justo aliquet in elit varius phasellus massa consequat. Euismod et et tincidunt iaculis porttitor justo vitae ornare consectetur. Tellus mauris erat lobortis cras sem bibendum integer Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet  Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet',
@@ -56,7 +54,7 @@ export default function Testimonials() {
     ]
 
     return (
-        <div id='testimonialsCarousel' className='bg-white pt-6  md:py-12 rounded-2xl relative'>
+        <div id='testimonialsCarousel' className='bg-white pt-6  md:py-10 rounded-2xl relative'>
             <div className="px-6 flex  items-center space-x-2 mb-7 xs:mb-0 absolute">
                 <div className="w-1 h-1 rounded-full bg-primary-bg"></div>
                 <span className="text-md text-primary-bg">What out clients say</span>
@@ -68,13 +66,12 @@ export default function Testimonials() {
                             slidesPerView: 2,
                             spaceBetween: 20
                         },
-                        968: {
+                        1050: {
                             slidesPerView: 3,
                             spaceBetween: 20
                         }
 
                     }}
-                    onSwiper={swiperRef}
                     centeredSlides={true}
                     spaceBetween={30}
                     navigation={true}
@@ -85,7 +82,7 @@ export default function Testimonials() {
                     <div>
                         {testimonialsArr.map((item, index) => (
                             <SwiperSlide key={index}>
-                                <div className='mt-10  xs:h-110 w-[90%]  md:!w-90 bg-[#151515] rounded-2xl p-6'>
+                                <div className='mt-10  max-h-max w-[90%]  md:w-90 bg-[#151515] rounded-2xl p-6'>
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g id="Quote Icon">
                                             <path id="&#226;&#128;&#156;"
