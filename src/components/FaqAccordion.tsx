@@ -3,15 +3,11 @@
 import React, { useState } from 'react'
 import Button from './ui/Button'
 import Accordion from './ui/Accordion';
+import { AccordionItem } from '@/types/accordion-prop.dto';
 
-// interface AccordionItem {
-//     title: string;
-//     firstContent: string;
-//     secondContent: string;
-// }
 const FaqAccordion = () => {
 
-    const faqAccordion = [
+    const faqAccordion: AccordionItem[] = [
         {
             title: 'Why should we choose Drafts over other web design agencies?',
             firstContent: 'Expert Team with Diverse Skills',
@@ -39,9 +35,9 @@ const FaqAccordion = () => {
         }
     ];
 
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-    const handleToggle = (index) => {
+    const handleToggle = (index: number) => {
         setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
     };
 
@@ -89,7 +85,7 @@ const FaqAccordion = () => {
                 <div>
                     {
                         faqAccordion.map((item, index) => (
-                            <Accordion key={index} item={item} index={index} handleFunction={handleToggle} activeIndex={activeIndex} faq={true} />
+                            <Accordion key={index} item={item} index={index} handleFunction={handleToggle} activeIndex={activeIndex} faq={true} title={''} firstContent={''} secondContent={''} />
                         ))
                     }
                 </div>

@@ -2,7 +2,22 @@ import Image from 'next/image'
 import React from 'react'
 import PlusIcon from "../../../public/icons/Plus.svg";
 import ArrowIcon from "../../../public/icons/Group.svg";
-const Accordion = ({ item, handleFunction, activeIndex, index, faq }) => {
+import { AccordionItem } from '@/types/accordion-prop.dto';
+
+interface AccordionProps extends AccordionItem {
+    item: {
+        title: string;
+        firstContent: string;
+        secondContent: string;
+        content?: string;
+        buttons?: string[];
+    },
+    handleFunction: (index: number) => void,
+    activeIndex: number | null,
+    index: number,
+    faq: boolean
+}
+const Accordion: React.FC<AccordionProps> = ({ item, handleFunction, activeIndex, index, faq }) => {
 
     return (
         <div
@@ -16,7 +31,7 @@ const Accordion = ({ item, handleFunction, activeIndex, index, faq }) => {
                 <div className="w-full">
                     <div className="pb-4 md:pb-8 group">
                         <div className="flex justify-between items-center">
-                            <h2 className={`text-[#F7F7F1] duration-500 ${ faq && activeIndex !== index && 'group-hover:text-4xl'} ${faq ? 'text-lg md:text-2xl' : 'text-3xl md:text-[56px]'} `}>{item.title}</h2>
+                            <h2 className={`text-[#F7F7F1] duration-500 ${faq && activeIndex !== index && 'group-hover:text-4xl'} ${faq ? 'text-lg md:text-2xl' : 'text-3xl md:text-[56px]'} `}>{item.title}</h2>
                             <Image
                                 src={faq ? ArrowIcon : PlusIcon}
                                 alt="Accordion toggle icon"
