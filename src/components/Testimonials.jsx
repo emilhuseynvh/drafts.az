@@ -56,7 +56,7 @@ export default function Testimonials() {
     ]
 
     return (
-        <div className='bg-white  py-12 rounded-2xl relative'>
+        <div id='testimonialsCarousel' className='bg-white pt-6  md:py-12 rounded-2xl relative'>
             <div className="px-6 flex  items-center space-x-2 mb-7 xs:mb-0 absolute">
                 <div className="w-1 h-1 rounded-full bg-primary-bg"></div>
                 <span className="text-md text-primary-bg">What out clients say</span>
@@ -79,7 +79,7 @@ export default function Testimonials() {
                     spaceBetween={30}
                     navigation={true}
                     modules={[Pagination, Navigation]}
-                    className="mySwiper h-120"
+                    className="mySwiper h-140"
                 >
 
                     <div>
@@ -117,20 +117,6 @@ export default function Testimonials() {
                     </div>
                 </Swiper>
             </div>
-            <style jsx global>{`
-                        .swiper-slide .h-110 {
-                            transform: translateY(0);
-                            transition: transform 0.3s ease;
-                        }
-                        .swiper-slide-active .h-110 {
-                            transform: translateY(-2.5rem); 
-                            z-index: 10;
-                        }
-                            .swiper-slide{
-                            display: flex;
-                            justify-content: center;
-                            }
-      `}</style>
 
         </div>
     );

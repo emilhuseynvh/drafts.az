@@ -86,7 +86,7 @@
     left: 33% !important;
 }
 
-.swiper-button-disabled{
+.swiper-button-disabled {
     border: 2px solid #000;
     background-color: #fff !important;
     color: #000 !important;
@@ -103,15 +103,33 @@
     .swiper-button-prev {
         left: 43% !important;
     }
+
     .swiper-button-next {
         right: 43% !important;
     }
 }
-@media only screen and (min-width: 1330)  {
+
+@media only screen and (min-width: 1330) {
     .swiper-button-prev {
         left: 46% !important;
     }
+
     .swiper-button-next {
         right: 46% !important;
     }
+}
+
+#testimonialsCarousel .swiper-slide {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+#testimonialsCarousel .swiper-slide-active {
+    transform: translateY(-2.5rem);
+    z-index: 10;
+}
+
+#testimonialsCarousel .swiper-slide {
+    display: flex !important;
+    justify-content: center !important;
 }
