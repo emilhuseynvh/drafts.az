@@ -44,10 +44,10 @@ const OurWork: React.FC = () => {
         <SwiperSlide>
           {activeIndex === 0 && (
             <>
-              <p className='text-end text-base md:absolute bottom-[10px] md:text-2xl'>VovaFM Landing Page</p>
+              <p className='text-end md:block hidden left-0 text-base md:absolute bottom-[10px] md:text-2xl'>VovaFM Landing Page</p>
               <video
                 lang='az'
-                className={`mt-3.5 md:mt-16 rounded-2xl md:mx-0 mx-auto h-70 object-cover md:ml-auto`}
+                className={`mt-8 md:mt-16 rounded-2xl md:mx-0 mx-auto h-70 object-cover md:ml-auto`}
 
                 autoPlay
                 preload='metadata'
@@ -64,13 +64,13 @@ const OurWork: React.FC = () => {
         <SwiperSlide>
           {activeIndex === 1 && (
             <>
-              <p className='text-end text-base md:absolute bottom-[10px] md:text-2xl'>RideX Mobile App</p>
+              <p className='text-end text-base md:inline-block left-0 hidden md:absolute bottom-[10px] md:text-2xl'>RideX Mobile App</p>
               {!videoLoaded && (
                 <div className="mt-3.5 md:w-[30%] md:ml-auto rounded-2xl h-70 bg-gray-300 animate-pulse"></div>
               )}
               <video
                 lang='az'
-                className={`mt-3.5 md:mt-16 rounded-2xl h-70 md:mx-0 mx-auto md:ml-auto object-cover ${!videoLoaded ? 'hidden' : ''}`}
+                className={`mt-8 md:mt-16 rounded-2xl h-70 md:mx-0 mx-auto md:ml-auto object-cover ${!videoLoaded ? 'hidden' : ''}`}
                 autoPlay
                 preload='metadata'
                 muted
@@ -86,12 +86,12 @@ const OurWork: React.FC = () => {
         <SwiperSlide>
           {activeIndex === 2 && (
             <>
-              <p className='text-end text-base md:absolute bottom-[10px] md:text-2xl'>Techchore Branding Design</p>
+              <p className='text-end  md:block hidden left-0 text-base md:absolute bottom-[10px] md:text-2xl'>Techchore Branding Design</p>
               {!videoLoaded && (
                 <div className="mt-3.5 md:ml-auto md:w-[30%] rounded-2xl h-70 bg-gray-300 animate-pulse"></div>
               )}
               <video
-                className={`mt-3.5 md:mt-16 rounded-2xl h-70 md:mx-0 mx-auto md:ml-auto object-cover ${!videoLoaded ? 'hidden' : ''}`}
+                className={`mt-8 md:mt-16 rounded-2xl h-70 md:mx-0 mx-auto md:ml-auto object-cover ${!videoLoaded ? 'hidden' : ''}`}
                 autoPlay
                 lang='az'
                 preload='metadata'
