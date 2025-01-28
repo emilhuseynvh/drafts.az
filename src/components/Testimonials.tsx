@@ -54,7 +54,7 @@ export default function Testimonials() {
     ]
 
     return (
-        <div id='testimonialsCarousel' className='bg-white pt-6  md:py-10 rounded-2xl relative'>
+        <div id='testimonialsCarousel' className='bg-primary-white pt-6  md:py-10 rounded-2xl relative'>
             <div className="px-6 flex  items-center space-x-2 mb-7 xs:mb-0 absolute">
                 <div className="w-1 h-1 rounded-full bg-primary-bg"></div>
                 <span className="text-md text-primary-bg">What out clients say</span>
@@ -73,6 +73,8 @@ export default function Testimonials() {
 
                     }}
                     centeredSlides={true}
+                    initialSlide={1}
+                    slideToClickedSlide
                     spaceBetween={30}
                     navigation={true}
                     modules={[Pagination, Navigation]}
@@ -82,7 +84,7 @@ export default function Testimonials() {
                     <div>
                         {testimonialsArr.map((item, index) => (
                             <SwiperSlide key={index}>
-                                <div className='mt-10  max-h-max w-[90%]  md:w-90 bg-[#151515] rounded-2xl p-6'>
+                                <div className='mt-10 cursor-pointer max-h-max w-[90%]  md:w-90 bg-[#151515] rounded-2xl p-6'>
                                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g id="Quote Icon">
                                             <path id="&#226;&#128;&#156;"
