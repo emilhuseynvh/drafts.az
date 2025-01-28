@@ -4,6 +4,7 @@ import Services from '@/components/services';
 import Button from '@/components/ui/Button';
 import FaqAccordion from '../components/FaqAccordion'
 import { Metadata } from 'next';
+import Testimonials from '../components/Testimonials'
 import React from 'react'
 
 export const metadata: Metadata = {
@@ -71,6 +72,9 @@ const page = () => {
       <Services />
       <div>
         <FaqAccordion />
+      </div>
+      <div>
+        <Testimonials />
       </div>
     </div>
   )
