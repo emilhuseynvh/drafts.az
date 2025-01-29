@@ -1,8 +1,8 @@
 "use client"
 
 import React, { useState } from 'react'
-import Button from './ui/Button'
-import Accordion from './ui/Accordion';
+import Button from '../ui/Button'
+import Accordion from '../ui/Accordion';
 import { AccordionItem } from '@/types/accordion-prop.dto';
 
 const FaqAccordion = () => {
@@ -58,20 +58,14 @@ const FaqAccordion = () => {
                                 </p>
                                 <Button width="200px">
                                     <p className="z-10 group-hover:text-white">Contact us</p>
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path fillRule="evenodd" clipRule="evenodd"
+                                    <svg className='z-10' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path className='group-hover:stroke-white' fillRule="evenodd" clipRule="evenodd"
                                             d="M10.131 13.869C8.96102 12.699 8.07902 11.389 7.49302 10.06C7.37002 9.77897 7.44202 9.44997 7.65902 9.23297L8.47802 8.41397C9.14902 7.74297 9.14902 6.79397 8.56302 6.20797L7.39002 5.03497C6.60902 4.25397 5.34302 4.25397 4.56202 5.03497L3.91002 5.68597C3.16902 6.42697 2.86002 7.49597 3.06002 8.55597C3.55402 11.169 5.07202 14.03 7.52102 16.479C9.97002 18.928 12.831 20.446 15.444 20.94C16.504 21.14 17.573 20.831 18.314 20.09L18.965 19.439C19.746 18.658 19.746 17.392 18.965 16.611L17.792 15.438C17.206 14.852 16.256 14.852 15.671 15.438L14.768 16.342C14.551 16.559 14.222 16.632 13.941 16.508C12.612 15.921 11.301 15.038 10.131 13.869Z"
                                             stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path d="M15 3V9H21" stroke="#151515" strokeWidth="1.5" strokeLinecap="round"
+                                        <path className='group-hover:stroke-white' d="M15 3V9H21" stroke="#151515" strokeWidth="1.5" strokeLinecap="round"
                                             strokeLinejoin="round" />
-                                        <path d="M21 3L15 9" stroke="#151515" strokeWidth="1.5" strokeLinecap="round"
+                                        <path className='group-hover:stroke-white' d="M21 3L15 9" stroke="#151515" strokeWidth="1.5" strokeLinecap="round"
                                             strokeLinejoin="round" />
-                                    </svg>
-
-                                    <svg className="z-10 block md:hidden" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                        <path className="group-hover:stroke-white" d="M9.924 6.5H10C13.314 6.5 16 9.186 16 12.5V13.919V18.5" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path className="group-hover:stroke-white" d="M9.92001 6.5L5.00001 6.5" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                        <path className="group-hover:stroke-white" d="M13 15.5L16 18.5L19 15.5" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </Button>
                             </div>

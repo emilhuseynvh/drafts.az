@@ -1,8 +1,8 @@
-import FaqAccordion from '@/components/FaqAccordion';
-import Hero from '@/components/Hero';
-import OurWork from '@/components/OurWork';
-import Services from '@/components/services';
-import Testimonials from '@/components/Testimonials';
+import FaqAccordion from '@/components/Home/FaqAccordion';
+import Hero from '@/components/Home/Hero';
+import OurWork from '@/components/Home/OurWork';
+import Services from '@/components/Home/services';
+import Testimonials from '@/components/Home/Testimonials';
 import Button from '@/components/ui/Button';
 import { Metadata } from 'next';
 import { useTranslations } from 'next-intl';
