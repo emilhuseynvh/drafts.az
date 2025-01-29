@@ -22,7 +22,7 @@ const OurWork: React.FC = () => {
   };
 
   return (
-    <div className='bg-white px-3 py-5 rounded-2xl relative'>
+    <div className='bg-primary-white px-3 py-5 rounded-2xl relative'>
       <div className='absolute'>
         <div className="flex items-center space-x-2 mb-7 xs:mb-0">
           <div className="w-1 h-1 rounded-full bg-primary-bg"></div>

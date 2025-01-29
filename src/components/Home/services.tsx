@@ -122,6 +122,7 @@ const Services: React.FC = () => {
                             handleFunction={handleToggle}
                             activeIndex={activeIndex}
                             index={index}
+                            title={''} firstContent={''} secondContent={''}
                             faq={false} />
                     ))}
                 </div>

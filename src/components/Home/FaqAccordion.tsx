@@ -79,7 +79,7 @@ const FaqAccordion = () => {
                 <div>
                     {
                         faqAccordion.map((item, index) => (
-                            <Accordion key={index} item={item} index={index} handleFunction={handleToggle} activeIndex={activeIndex} faq={true} title={''} firstContent={''} secondContent={''} />
+                            <Accordion key={index} item={item} index={index} handleFunction={handleToggle} activeIndex={activeIndex} faq={true} />
                         ))
                     }
                 </div>
