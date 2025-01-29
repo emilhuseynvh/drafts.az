@@ -1,10 +1,10 @@
-import Hero from '@/components/Hero';
-import OurWork from '@/components/OurWork';
-import Services from '@/components/services';
+import Hero from '@/components/Home/Hero';
+import OurWork from '@/components/Home/OurWork';
+import Services from '@/components/Home/services';
 import Button from '@/components/ui/Button';
-import FaqAccordion from '../components/FaqAccordion'
+import FaqAccordion from '../components/Home/FaqAccordion'
 import { Metadata } from 'next';
-import Testimonials from '../components/Testimonials'
+import Testimonials from '../components/Home/Testimonials'
 import React from 'react'
 
 export const metadata: Metadata = {

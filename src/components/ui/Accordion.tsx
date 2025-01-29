@@ -31,11 +31,11 @@ const Accordion: React.FC<AccordionProps> = ({ item, handleFunction, activeIndex
                 <div className="w-full">
                     <div className="pb-4 md:pb-8 group">
                         <div className="flex justify-between items-center">
-                            <h2 className={`text-[#F7F7F1] duration-500 ${faq && activeIndex !== index && 'group-hover:text-4xl'} ${faq ? 'text-lg md:text-2xl' : 'text-3xl md:text-[56px]'} `}>{item.title}</h2>
+                            <h2 className={`text-[#F7F7F1] duration-500 ${faq && activeIndex !== index && 'md:group-hover:text-4xl'} ${faq ? 'text-lg md:text-2xl' : 'text-3xl md:text-[56px]'} `}>{item.title}</h2>
                             <Image
                                 src={faq ? ArrowIcon : PlusIcon}
                                 alt="Accordion toggle icon"
-                                className={` transition-transform duration-700  w-5 h-5 md:w-8 md:h-8  ${activeIndex !== index && faq ? '-rotate-135 group-hover:-rotate-90' : ''} ${activeIndex === index ? "rotate-45" : ""}`}
+                                className={` transition-transform duration-700  w-6 h-6 md:w-8 md:h-8  ${activeIndex !== index && faq ? '-rotate-135 group-hover:-rotate-90' : ''} ${activeIndex === index ? "rotate-45" : ""}`}
                             />
                         </div>
                         <div

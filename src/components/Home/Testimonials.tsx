@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
-import userImage from '../../public/icons/Frame826.png'
+import userImage from '../../../public/icons/Frame826.png'
 import Image from 'next/image';
 export default function Testimonials() {
     const testimonialsArr = [

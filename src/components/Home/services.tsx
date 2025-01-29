@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import Button from "./ui/Button";
-import Accordion from './ui/Accordion'
+import Button from "../ui/Button";
+import Accordion from '../ui/Accordion'
 
 interface AccordionItem {
     title: string;
