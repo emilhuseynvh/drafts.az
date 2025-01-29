@@ -1,0 +1,19 @@
+{
+    "header": {
+        "list": {
+            "services": "Services",
+            "work": "Work",
+            "about": "About",
+            "contact": "Contact"
+        },
+        "start_project": "Start the project"
+    },
+    "about": {
+        "drafts_description_long": "Drafts is a platform that provides high-quality design and software development services to its clients. We work tirelessly to develop your projects and offer solutions tailored to your needs. At Drafts, we prioritize long-term collaborations and are committed to delivering innovative services that help our clients achieve their goals. Our mission is to ensure the success of your business by providing top-notch services.",
+        "drafts_description_short": "Drafts offers high-quality design and software development services, tailored to your needs. We focus on long-term partnerships, delivering innovative solutions to help your business succeed.",
+        "more" : "More"
+    },
+    "our_work" : {
+        "our_work" : "Our work"
+    }
+}

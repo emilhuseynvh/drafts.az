@@ -1,0 +1,19 @@
+{
+    "header": {
+        "list": {
+            "services": "Servis",
+            "work": "işlər",
+            "about": "Haqqımızda",
+            "contact": "Əlaqə"
+        },
+        "start_project": "Layihəyə başlayın"
+    },
+    "about": {
+        "drafts_description_long": "Drafts, müştərilərinə yüksək keyfiyyətli dizayn və proqram təminatı xidmətləri təqdim edən bir platformadır. Biz layihələrinizi inkişaf etdirmək və ehtiyaclarınıza uyğun həllər təklif etmək üçün yorulmadan çalışırıq. Drafts-da biz uzunmüddətli əməkdaşlıqlara önəm veririk və müştərilərimizin məqsədlərinə çatmalarına kömək edəcək innovativ xidmətlər təqdim etməyə sadiqik. Missiyamız, işinizin uğurunu təmin etmək üçün ən yüksək səviyyəli xidmətlər təqdim etməkdir.",
+        "drafts_description_short": "Drafts, ehtiyaclarınıza uyğun yüksək keyfiyyətli dizayn və proqram təminatı xidmətləri təklif edir. Biz uzunmüddətli tərəfdaşlıqlara diqqət yetirir, işinizin uğur qazanmasına kömək edəcək innovativ həllər təqdim edirik.",
+        "more" : "Daha çox"
+    },
+    "our_work" : {
+        "our_work" : "İşlərimiz"
+    }
+}

@@ -8,10 +8,12 @@ import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useTranslations } from 'next-intl';
 
 const OurWork: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const t = useTranslations()
 
   useEffect(() => {
     setVideoLoaded(false);
@@ -26,7 +28,7 @@ const OurWork: React.FC = () => {
       <div className='absolute'>
         <div className="flex items-center space-x-2 mb-7 xs:mb-0">
           <div className="w-1 h-1 rounded-full bg-primary-bg"></div>
-          <span className="text-md text-primary-bg">Our work</span>
+          <span className="text-md text-primary-bg">{t('our_work.our_work')}</span>
         </div>
         <p className='hidden md:block my-7 text-3xl font-normal w-[60%]'>Take a look at our projects</p>
       </div>
