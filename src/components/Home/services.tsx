@@ -16,7 +16,7 @@ const Services: React.FC = () => {
     };
 
     return (
-        <div className="mt-36">
+        <div className="py-17.5">
             <div className="flex flex-col xs:flex-row justify-between items-start">
                 <div className="flex items-center space-x-3 mb-7 xs:mb-0">
                     <div className="w-2 h-2 rounded-full bg-[#F7F7F1]"></div>
