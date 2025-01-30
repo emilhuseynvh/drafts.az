@@ -3,7 +3,7 @@ import { Geist, Inter } from "next/font/google";
 import "./../../styles/globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import { getLocale, getMessages } from "next-intl/server";
+import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
@@ -25,19 +25,20 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: {locale}
+  params
 }: Readonly<{
   children: React.ReactNode;
-  params: {locale: any}
+  params: { locale: 'en' | 'az' };
 }>) {
 
-  // Parametrin mövcudluğunu yoxlayın
-  if (!routing.locales.includes(locale)) {
+  const { locale } = params;
+
+  if (locale && !routing.locales.includes(locale)) {
     notFound();
   }
 
-  const messages = await getMessages(); // Əsas mesajları əldə edin
-  
+  const messages = await getMessages({ locale });
+
   return (
     <html lang={locale}>
       <body
@@ -54,3 +55,4 @@ export default async function RootLayout({
     </html>
   );
 }
+

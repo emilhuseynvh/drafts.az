@@ -4,7 +4,8 @@
             "services": "Services",
             "work": "Work",
             "about": "About",
-            "contact": "Contact"
+            "contact": "Contact",
+            "home_page": "Home Page" 
         },
         "start_project": "Start the project"
     },

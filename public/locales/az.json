@@ -4,7 +4,8 @@
             "services": "Servis",
             "work": "işlər",
             "about": "Haqqımızda",
-            "contact": "Əlaqə"
+            "contact": "Əlaqə",
+            "home_page": "Ana səhifə" 
         },
         "start_project": "Layihəyə başlayın"
     },

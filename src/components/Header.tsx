@@ -1,14 +1,15 @@
 'use client'
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../public/logo.svg';
 import logoBlack from '../../public/logo-black.svg';
 import Button from './ui/Button';
 import { useTranslations } from 'next-intl';
+import HamburgerMenu from './HamburgerMenu';
 const Header: React.FC = () => {
   const t = useTranslations()
-  console.log(t('header.list.services'));
-  
+  const [flag, setFlag] = useState<boolean>(false);
+
   return (
     <>
       <header className='md:pt-6 md:absolute fixed z-50 top-0 left-0 right-0 md:h-auto h-17 md:bg-transparent bg-primary-white'>
@@ -47,13 +48,14 @@ const Header: React.FC = () => {
               <p className='relative z-10 group-hover:text-white'>{t('header.start_project')}</p>
             </Button>
           </div>
-          <div className='md:hidden flex flex-col gap-3 cursor-pointer'>
+          <div onClick={() => setFlag(!flag)} className='md:hidden flex flex-col gap-3 cursor-pointer'>
             <div className='bg-black w-8 h-[2.5px]'></div>
             <div className='bg-black w-8 h-[2.5px]'></div>
           </div>
         </div>
       </header >
       <div className='h-[40px] w-full'></div>
+      <HamburgerMenu flag={flag} setFlag={setFlag}  />
     </>
   );
 };
