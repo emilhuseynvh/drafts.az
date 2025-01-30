@@ -6,14 +6,127 @@
             "about": "Haqqımızda",
             "contact": "Əlaqə"
         },
-        "start_project": "Layihəyə başlayın"
+        "start_project": "Bizimlə əlaqə"
     },
     "about": {
         "drafts_description_long": "Drafts, müştərilərinə yüksək keyfiyyətli dizayn və proqram təminatı xidmətləri təqdim edən bir platformadır. Biz layihələrinizi inkişaf etdirmək və ehtiyaclarınıza uyğun həllər təklif etmək üçün yorulmadan çalışırıq. Drafts-da biz uzunmüddətli əməkdaşlıqlara önəm veririk və müştərilərimizin məqsədlərinə çatmalarına kömək edəcək innovativ xidmətlər təqdim etməyə sadiqik. Missiyamız, işinizin uğurunu təmin etmək üçün ən yüksək səviyyəli xidmətlər təqdim etməkdir.",
         "drafts_description_short": "Drafts, ehtiyaclarınıza uyğun yüksək keyfiyyətli dizayn və proqram təminatı xidmətləri təklif edir. Biz uzunmüddətli tərəfdaşlıqlara diqqət yetirir, işinizin uğur qazanmasına kömək edəcək innovativ həllər təqdim edirik.",
-        "more" : "Daha çox"
+        "more": "Daha çox"
     },
-    "our_work" : {
-        "our_work" : "İşlərimiz"
+    "our_work": {
+        "our_work": "İşlərimiz",
+        "work_slider_static_title": "Layihələrimizə nəzər salın"
+    },
+    "services": {
+        "services_headline": {
+            "title": "Servislər",
+            "first_headline": "Biznesinizi növbəti səviyyəyə necə qaldırırıq",
+            "second_headline": "Biz peşəkarlığımızla seçilən bir agentlik olaraq, biznesinizi növbəti səviyyəyə qaldırmaq üçün sizə kömək etməyə sadiqik.",
+            "services_all": "Bütün xidmətlər"
+        },
+        "services_accordion": [
+            {
+                "title": "Qrafik Dizayn",
+                "content": "Yaradıcı və istifadəçi yönümlü dizaynlar layihələrinizin fərqlənməsini və yadda qalmasını təmin edir. Təcrübəli qrafik dizaynerlərimiz sizin ehtiyaclarınıza uyğun unikal və funksional həllər təqdim edirlər.",
+                "buttons": [
+                    "Loqo",
+                    "Brendinq",
+                    "Poster",
+                    "SMM Poster",
+                    "İkonlar",
+                    "Məhsul Posteri",
+                    "Veb Dizayn"
+                ]
+            },
+            {
+                "title": "UX/UI Dizayn",
+                "content": "İstifadəçi yönümlü dizayn unikal istifadəçi təcrübəsi təqdim etməkdə mühüm rol oynayır. UX/UI dizaynerlərimiz sizə unikal və sərfəli veb və mobil təcrübə təqdim etmək üçün öz bacarıqlarını ortaya qoyurlar.",
+                "buttons": [
+                    "İstifadəçi İnterfeysi",
+                    "İstifadəçi Təcrübəsi",
+                    "Veb",
+                    "Landing Səhifə",
+                    "Mobil Tətbiq",
+                    "Dizayn Sistemi"
+                ]
+            },
+            {
+                "title": "Front-end Proqramlaşdırma",
+                "content": "Peşəkar frontend tərtibatçı komandamız yüksək keyfiyyətli, funksional, vizual cəhətdən cəlbedici və yüksək performanslı veb saytlar yaratmaq üçün birlikdə çalışır.",
+                "buttons": [
+                    "JavaScript",
+                    "React",
+                    "Next.js",
+                    "Vue.js",
+                    "Angular",
+                    "TypeScript",
+                    "HTML",
+                    "CSS"
+                ]
+            },
+            {
+                "title": "Back-end Proqramlaşdırma",
+                "content": "Müasir texnologiyalarla güclü sistemlər quraraq və etibarlı həllər təqdim edərək, peşəkar backend tərtibatçılarımız veb saytların stabil işləməsini və yüksək performans göstərməsini təmin edirlər.",
+                "buttons": [
+                    "Node.js",
+                    "Express.js",
+                    "Nest.js",
+                    "MongoDB",
+                    "PostgreSQL",
+                    "SQL"
+                ]
+            }
+        ]
+    },
+    "faq": {
+        "headline": {
+            "title": "Tez-tez verilən suallar",
+            "content": "Axtardığınızı tapa bilmirsiniz? Biz kömək etmək üçün buradayıq. Digər suallarınız üçün bizimlə əlaqə saxlayın!",
+            "button": "Bizimlə əlaqə"
+        },
+        "faq_accordion": [
+            {
+                "title": "Niyə Drafts agentliyini digər veb dizayn agentliklərindən üstün tutmalıyıq?",
+                "firstContent": "Mütəxəssis Komanda və Çoxşaxəli Bacarıqlar",
+                "secondContent": "Bacarıqlı qrafik dizaynerlərimiz, UX/UI dizaynerlərimiz, frontend və backend tərtibatçılarımız birlikdə işləyərək yüksək keyfiyyətli, funksional və vizual baxımdan cəlbedici veb saytlar hazırlayır."
+            },
+            {
+                "title": "Xidmətinizdən istifadə etsəm, mənbə koduna giriş əldə edəcəyəmmi?",
+                "firstContent": "Bəli, Drafts olaraq biz şəffaflığa və müştəri mülkiyyətinə inanırıq. Veb sayt dizaynı və ya tərtibatı üçün xidmətlərimizdən istifadə etdikdə, layihə tamamlandıqdan sonra mənbə koduna tam giriş əldə edəcəksiniz. İş prosesi belədir:",
+                "secondContent": "Bəli, Drafts olaraq biz şəffaflığa və müştəri mülkiyyətinə inanırıq. Veb sayt dizaynı və ya tərtibatı üçün xidmətlərimizdən istifadə etdikdə, layihə tamamlandıqdan sonra mənbə koduna tam giriş əldə edəcəksiniz:\n\n1. Tam Mülkiyyət\n2. Xüsusi Kod Təslimi\n3. Üçüncü Tərəf Alətləri və Lisenziyalar\n4. Uzunmüddətli Dəstək"
+            },
+            {
+                "title": "Veb saytımızın brend kimliyimizi əks etdirməsini necə təmin edirsiniz?",
+                "firstContent": "Dəqiq və Əməkdaşlığa Söykənən Yanaşma",
+                "secondContent": "Drafts olaraq, veb saytınızın brend kimliyinizə uyğun olmasını təmin etmək üçün dəqiq və əməkdaşlığa əsaslanan yanaşmadan istifadə edirik. Bunu belə həyata keçiririk:\n\n1. Dərin Brend Analizi\n2. Əməkdaşlıq Strategiya Sessiyaları\n3. Xüsusi Dizayn Elementləri\n4. Sayt Üzərində Uyğunluq\n5. İstifadəçi-Yönümlü Yanaşma\n6. Test və İnkişaf"
+            },
+            {
+                "title": "Adətən hansı bizneslərlə işləyirsiniz?",
+                "firstContent": "Geniş Müştəri Kütləsi",
+                "secondContent": "Drafts olaraq, müxtəlif sahələrdə fəaliyyət göstərən bizneslərlə əməkdaşlıq edirik və hər müştərinin unikal ehtiyaclarına uyğun xidmətlər təqdim edirik. İşlədiyimiz bizneslərə aşağıdakılar daxildir:\n\n1. Kiçik və Orta Bizneslər (KOB)\n2. Startaplar, Korporasiyalar və Böyük Şirkətlər\n3. E-Ticarət Biznesləri\n4. Kreativ Agentliklər\n5. Qeyri-kommersiya və Təhsil İnstitutları\n6. Sağlamlıq və Rifah\n7. Konsultasiya və Peşəkar Xidmətlər\n8. Texnologiya Şirkətləri"
+            },
+            {
+                "title": "Veb saytın uğurunu istifadəyə verildikdən sonra necə ölçürsünüz?",
+                "firstContent": "Performans və Məqsədlərə Uyğunluq",
+                "secondContent": "Drafts olaraq, veb saytın uğurunu onun biznes və istifadəçi məqsədlərinə nə dərəcədə çatdığı ilə ölçürük. Saytın uğurunu təhlil etmək üçün istifadə etdiyimiz əsas metriklər və üsullar bunlardır:\n\n1. İstifadəçi Fəaliyyəti Metrikləri\n2. Konversiya Dərəcələri\n3. Trafik və SEO Performansı\n4. Yüklənmə Vaxtı və Texniki Performans\n5. Rəy və İstifadəçi Testləri"
+            }
+        ]
+    },
+    "footer": {
+        "title": "İşlərimiz",
+        "headline": "Ehtiyaclarınızı dəqiqləşdirəcək və sizin üçün təxmini xərc və zaman çərçivəsi ilə bir layihə planı hazırlayacağıq",
+        "button": "Layihəyə başla",
+        "learn": {
+            "title": "Öyrən",
+            "list": [
+                "Ana səhifə",
+                "Haqqımızda",
+                "İşlərimiz",
+                "Xidmətlər",
+                "Müştərilərimizin fikirləri",
+                "Tez-tez verilən suallar"
+            ]
+        },
+        "contact": "Əlaqə"
     }
 }

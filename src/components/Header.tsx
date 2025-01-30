@@ -7,8 +7,6 @@ import Button from './ui/Button';
 import { useTranslations } from 'next-intl';
 const Header: React.FC = () => {
   const t = useTranslations()
-  console.log(t('header.list.services'));
-  
   return (
     <>
       <header className='md:pt-6 md:absolute fixed z-50 top-0 left-0 right-0 md:h-auto h-17 md:bg-transparent bg-primary-white'>

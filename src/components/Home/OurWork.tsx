@@ -30,7 +30,7 @@ const OurWork: React.FC = () => {
           <div className="w-1 h-1 rounded-full bg-primary-bg"></div>
           <span className="text-md text-primary-bg">{t('our_work.our_work')}</span>
         </div>
-        <p className='hidden md:block my-7 text-3xl font-normal w-[60%]'>Take a look at our projects</p>
+        <p className='hidden md:block my-7 text-3xl font-normal w-[60%]'>{t('our_work.work_slider_static_title')}</p>
       </div>
       <Swiper
         spaceBetween={30}

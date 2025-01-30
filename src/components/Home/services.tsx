@@ -3,65 +3,12 @@
 import React, { useState } from "react";
 import Button from "../ui/Button";
 import Accordion from '../ui/Accordion'
-
-interface AccordionItem {
-    title: string;
-    content: string;
-    buttons: string[];
-}
+import { useTranslations } from "next-intl";
 
 const Services: React.FC = () => {
-    const servicesAccordion: AccordionItem[] = [
-        {
-            title: "Graphic Design",
-            content:
-                "Creative and user-centric designs ensure your projects stand out and leave a lasting impression. Our experienced graphic designers provide unique and functional solutions tailored to your needs.",
-            buttons: [
-                "Logo",
-                "Branding",
-                "Poster",
-                "SMM Poster",
-                "Icons",
-                "Product Poster",
-                "Web Design",
-            ],
-        },
-        {
-            title: "UX/UI Design",
-            content:
-                "User-centric design plays a key role in providing a unique user experience. Our UX/UI designers do their magic to provide a unique and cost-effective web and mobile presence.",
-            buttons: [
-                "User Interface",
-                "User Experience",
-                "Web",
-                "Landing Page",
-                "Mobile App",
-                "Design System",
-            ],
-        },
-        {
-            title: "Front-end Developer",
-            content:
-                "Our professional frontend developer team works together to create high-quality, functional, visually appealing, and high-performing websites.",
-            buttons: [
-                "JavaScript",
-                "React",
-                "Next.js",
-                "Vue.js",
-                "Angular",
-                "TypeScript",
-                "HTML",
-                "CSS",
-            ],
-        },
-        {
-            title: "Back-end Developer",
-            content:
-                "By building robust systems and providing reliable solutions with modern technologies, our team of professional backend developers ensures that websites run smoothly and perform at a high level.",
-            buttons: ["Node.js", "Express.js", "Nest.js", "MongoDB", "PostgreSQL", "SQL"],
-        },
-    ];
+    const t = useTranslations()
 
+    const accardionItems = t.raw('services.services_accordion')
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     const handleToggle = (index: number): void => {
@@ -73,23 +20,22 @@ const Services: React.FC = () => {
             <div className="flex flex-col xs:flex-row justify-between items-start">
                 <div className="flex items-center space-x-3 mb-7 xs:mb-0">
                     <div className="w-2 h-2 rounded-full bg-[#F7F7F1]"></div>
-                    <span className="text-lg text-[#F7F7F1]">Services</span>
+                    <span className="text-lg text-[#F7F7F1]">{t('services.services_headline.title')}</span>
                 </div>
                 <div className="max-w-2xl">
                     <div className="flex justify-end md:gap-10 lg:gap-[80px]">
                         <div className="md:w-[40%] lg:w-full">
                             <p className="hidden md:block  text-[#AAA] text-2xl leading-8">
-                                How we take your business to the next level
+                                {t('services.services_headline.first_headline')}
                             </p>
                         </div>
                         <div>
                             <div className="max-w-64 md:max-w-80 w-full flex flex-col items-start gap-7">
                                 <p className="text-[#AAA] text-sm leading-6">
-                                    We are an agency distinguished by our professionalism, and we are
-                                    committed to helping you take your business to the next level.
+                                    {t('services.services_headline.second_headline')}
                                 </p>
                                 <Button width="200px">
-                                    <p className="z-10 group-hover:text-white">See all services</p>
+                                    <p className="z-10 group-hover:text-white">{t('services.services_headline.services_all')}</p>
                                     <svg className="hidden md:block z-10" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g id="Group">
                                             <g id="Group_2">
@@ -115,15 +61,18 @@ const Services: React.FC = () => {
             <div className="w-full flex justify-between">
                 <div></div>
                 <div className="mt-20 max-w-2xl">
-                    {servicesAccordion.map((item, index) => (
+                    {accardionItems.map((item: any, index: number) => (
                         <Accordion
                             key={index}
                             item={item}
                             handleFunction={handleToggle}
                             activeIndex={activeIndex}
                             index={index}
-                            title={''} firstContent={''} secondContent={''}
-                            faq={false} />
+                            title={item.title}
+                            firstContent={item.content}
+                            secondContent={''}
+                            faq={false}
+                        />
                     ))}
                 </div>
             </div>
