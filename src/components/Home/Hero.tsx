@@ -3,31 +3,48 @@ import React, { useState } from 'react';
 import Button from '../ui/Button';
 import lang from './../../../public/icons/language.svg';
 import Image from 'next/image';
-import az from './../../../public/icons/az.svg'
-import en from './../../../public/icons/en.svg'
-import { useTranslations } from 'next-intl';
+import az from './../../../public/icons/az.svg';
+import en from './../../../public/icons/en.svg';
+import ru from './../../../public/icons/russia.png';
+import { useLocale, useTranslations } from 'next-intl';
+import { useRouter } from '@/i18n/routing';
+import { usePathname } from 'next/navigation';
 
 
 const Hero: React.FC = () => {
-  const t = useTranslations()
+  const t = useTranslations();
+
+  const router = useRouter();
+  const pathname = usePathname();
+  const currentLocale = useLocale();
+
+  const changeLanguage = (newLocale: string) => {
+    const pathWithoutLocale = pathname.replace(`/${currentLocale}`, '');
+    const newPath = pathWithoutLocale || '/';
+    router.replace(newPath, { locale: newLocale });
+  };
 
   const [flag, setFlag] = useState(false);
   return (
     <div className='relative md:mt-0 mt-16'>
       <div onClick={() => setFlag(!flag)} className={`absolute duration-300 transition-[height] z-50 hidden lg:block right-[30%] xl:right-[25%] select-none py-2 px-3 ${!flag ? 'h-10' : 'h-30'} overflow-hidden rounded-xl top-2 bg-white`}>
         <div className='flex gap-1.5 cursor-pointer'>
-          <Image src={lang} alt='Drafts.az language switchment selection' />
+          {currentLocale.toUpperCase()}
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M8 10L12 14L16 10" stroke="#242424" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
-        <div className='flex items-center ml-0.5 gap-2 my-3  cursor-pointer'>
+        <div onClick={() => changeLanguage('az')} className={`flex ${currentLocale === 'az' && 'hidden'} items-center ml-0.5 gap-2 my-3  cursor-pointer`}>
           <p className='text-sm font-medium'>AZ</p>
           <Image src={az} alt='Language azerbaijan icon' />
         </div>
-        <div className='flex items-center ml-0.5 gap-2 my-3  cursor-pointer'>
+        <div onClick={() => changeLanguage('en')} className={`flex ${currentLocale === 'en' && 'hidden'} items-center ml-0.5 gap-2 my-3  cursor-pointer`}>
           <p className='text-sm font-medium'>EN</p>
           <Image src={en} alt='Language english icon' />
+        </div>
+        <div onClick={() => changeLanguage('ru')} className={`flex ${currentLocale === 'ru' && 'hidden'} items-center ml-0.5 gap-2 my-3  cursor-pointer`}>
+          <p className='text-sm font-medium'>RU</p>
+          <Image className='size-6' src={ru} alt='Language english icon' />
         </div>
       </div>
       <video lang='az' className='h-[400px] md:h-[724px] w-full object-cover rounded-2xl' autoPlay loop muted>
