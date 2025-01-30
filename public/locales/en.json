@@ -7,14 +7,127 @@
             "contact": "Contact",
             "home_page": "Home Page" 
         },
-        "start_project": "Start the project"
+        "start_project": "Contact us"
     },
     "about": {
         "drafts_description_long": "Drafts is a platform that provides high-quality design and software development services to its clients. We work tirelessly to develop your projects and offer solutions tailored to your needs. At Drafts, we prioritize long-term collaborations and are committed to delivering innovative services that help our clients achieve their goals. Our mission is to ensure the success of your business by providing top-notch services.",
         "drafts_description_short": "Drafts offers high-quality design and software development services, tailored to your needs. We focus on long-term partnerships, delivering innovative solutions to help your business succeed.",
-        "more" : "More"
+        "more": "More"
     },
-    "our_work" : {
-        "our_work" : "Our work"
+    "our_work": {
+        "our_work": "Our work",
+        "work_slider_static_title": "Take a look at our projects"
+    },
+    "services": {
+        "services_headline": {
+            "title": "Services",
+            "first_headline": "How we take your business to the next level",
+            "second_headline": "We are an agency distinguished by our professionalism, and we are committed to helping you take your business to the next level.",
+            "services_all": "See all services"
+        },
+        "services_accordion": [
+            {
+                "title": "Graphic Design",
+                "content": "Creative and user-centric designs ensure your projects stand out and leave a lasting impression. Our experienced graphic designers provide unique and functional solutions tailored to your needs.",
+                "buttons": [
+                    "Logo",
+                    "Branding",
+                    "Poster",
+                    "SMM Poster",
+                    "Icons",
+                    "Product Poster",
+                    "Web Design"
+                ]
+            },
+            {
+                "title": "UX/UI Design",
+                "content": "User-centric design plays a key role in providing a unique user experience. Our UX/UI designers do their magic to provide a unique and cost-effective web and mobile presence.",
+                "buttons": [
+                    "User Interface",
+                    "User Experience",
+                    "Web",
+                    "Landing Page",
+                    "Mobile App",
+                    "Design System"
+                ]
+            },
+            {
+                "title": "Front-end Developer",
+                "content": "Our professional frontend developer team works together to create high-quality, functional, visually appealing, and high-performing websites.",
+                "buttons": [
+                    "JavaScript",
+                    "React",
+                    "Next.js",
+                    "Vue.js",
+                    "Angular",
+                    "TypeScript",
+                    "HTML",
+                    "CSS"
+                ]
+            },
+            {
+                "title": "Back-end Developer",
+                "content": "By building robust systems and providing reliable solutions with modern technologies, our team of professional backend developers ensures that websites run smoothly and perform at a high level.",
+                "buttons": [
+                    "Node.js",
+                    "Express.js",
+                    "Nest.js",
+                    "MongoDB",
+                    "PostgreSQL",
+                    "SQL"
+                ]
+            }
+        ]
+    },
+    "faq": {
+        "headline": {
+            "title": "Faq",
+            "content": "Can't find what you're looking for? We're here to help. Contact us with any other questions!",
+            "button": "Contact us"
+        },
+        "faq_accordion": [
+            {
+                "title": "Why should we choose Drafts over other web design agencies?",
+                "firstContent": "Why should we choose Drafts over other web design agencies?",
+                "secondContent": "Our skilled team Graphic Design as well as UX/UI designers, frontend, and backend developers work together to deliver high-quality, functional, and visually stunning websites that perform exceptionally."
+            },
+            {
+                "title": "Will I get access to the source code if I use your service?",
+                "firstContent": "Yes, at Drafts, we believe in transparency and client ownership. When you use our services for website design or development, you will have full access to the source code upon project completion. Here's how it works:",
+                "secondContent": "Yes, at Drafts, we believe in transparency and client ownership. When you use our services for website design or development, you will have full access to the source code upon project completion. Here's how it works:\n\n1. Full Ownership\n2. Custom Code Delivery\n3. Third-Party Tools and Licenses\n4. Long-Term Support"
+            },
+            {
+                "title": "How do you ensure that the website reflects our brand identity?",
+                "firstContent": "Meticulous and Collaborative Approach",
+                "secondContent": "At Drafts, we take a meticulous and collaborative approach to ensure your website accurately reflects your brand identity. Here’s how we achieve this:\n\n1. In-Depth Brand Analysis\n2. Collaborative Strategy Sessions\n3. Custom Design Elements\n4. Consistency Across the Website\n5. User-Centric Approach\n6. Testing and Refinement"
+            },
+            {
+                "title": "What kind of businesses do you usually work with?",
+                "firstContent": "Diverse Range of Clients",
+                "secondContent": "At Drafts, we collaborate with a diverse range of businesses across various industries, tailoring our services to meet the unique needs of each client. Some of the types of businesses we typically work with include:\n\n1. Small and Medium-Sized Enterprises (SMEs)\n2. Startups, Corporations and Enterprises\n3. E-Commerce Businesses\n4. Creative Agencies\n5. Nonprofits and Educational Institutions\n6. Health and Wellness\n7. Consulting and Professional Services\n8. Tech Companies"
+            },
+            {
+                "title": "How do you measure the success of a website after launch?",
+                "firstContent": "Performance and Goals Alignment",
+                "secondContent": "At Drafts, we understand that a website's success is measured by its performance in achieving both business and user goals. Here are the key metrics and methods we use to assess a website’s success after launch:\n\n1. User Engagement Metrics\n2. Conversion Rates\n3. Traffic and SEO Performance\n4. Load Times and Technical Performance\n5. Feedback and User Testing"
+            }
+        ]
+    },
+    "footer": {
+        "title": "Our Work",
+        "headline": "We will clarify your needs and prepare a project plan for you with an estimated cost and timeline",
+        "button": "Start the project",
+        "learn": {
+            "title": "Öyrən",
+            "list": [
+                "Home",
+                "About us",
+                "Our work",
+                "Services",
+                "What our client say",
+                "FAQs"
+            ]
+        },
+        "contact": "Contact"
     }
 }

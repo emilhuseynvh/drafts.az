@@ -49,7 +49,7 @@ const page = () => {
   return (
     <div className='wrapper'>
       <Hero />
-      <div className='flex justify-between items-start my-[60px] flex-col xs:flex-row'>
+      <div className='flex justify-between items-start py-17.5 flex-col xs:flex-row'>
         <div className="flex items-center space-x-3 pb-7 xs:py-0">
           <div className="w-2 h-2 rounded-full bg-[#F7F7F1]"></div>
           <span className="text-lg text-[#F7F7F1]">{t('header.list.about')}</span>
@@ -73,10 +73,10 @@ const page = () => {
       <OurWork />
       <Services />
       <div>
-        <FaqAccordion />
+        <Testimonials />
       </div>
       <div>
-        <Testimonials />
+        <FaqAccordion />
       </div>
     </div>
   );
