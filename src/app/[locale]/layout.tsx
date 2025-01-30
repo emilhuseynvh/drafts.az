@@ -19,40 +19,44 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Drafts.az',
-  description: 'IT consulting and breding',
+  title: "Drafts.az",
+  description: "IT consulting and branding",
 };
 
 export default async function RootLayout({
   children,
-  params
+  params,
 }: Readonly<{
   children: React.ReactNode;
-  params: { locale: 'en' | 'az' };
+  params: Promise<{ locale: "en" | "az" | "ru" }>;
 }>) {
+  const resolvedParams = await params;
+  const { locale } = resolvedParams;
 
-  const { locale } = params;
-
-  if (locale && !routing.locales.includes(locale)) {
+  if (!locale || !routing.locales.includes(locale)) {
     notFound();
   }
 
-  const messages = await getMessages({ locale });
+  try {
+    const messages = await getMessages({ locale });
 
-  return (
-    <html lang={locale}>
-      <body
-        className={`${geistSans.variable} ${inter.variable} antialiased bg-[#151515]`}
-      >
-        <NextIntlClientProvider messages={messages}>
-          <div>
-            <Header />
-            {children}
-            <Footer />
-          </div>
-        </NextIntlClientProvider>
-      </body>
-    </html>
-  );
+    return (
+      <html lang={locale}>
+        <body
+          className={`${geistSans.variable} ${inter.variable} antialiased bg-[#151515]`}
+        >
+          <NextIntlClientProvider messages={messages}>
+            <div>
+              <Header />
+              {children}
+              <Footer />
+            </div>
+          </NextIntlClientProvider>
+        </body>
+      </html>
+    );
+  } catch (error) {
+    console.error("Error loading messages:", error);
+    notFound();
+  }
 }
-
