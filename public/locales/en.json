@@ -5,7 +5,7 @@
             "work": "Work",
             "about": "About",
             "contact": "Contact",
-            "home_page": "Home Page" 
+            "home_page": "Home Page"
         },
         "start_project": "Contact us"
     },
@@ -16,7 +16,23 @@
     },
     "our_work": {
         "our_work": "Our work",
-        "work_slider_static_title": "Take a look at our projects"
+        "work_slider_static_title": "Take a look at our projects",
+        "slider_items": [
+            {
+                "source": "VovaFM.mp4",
+                "content": "VovaFM Landing Page"
+            },
+            {
+                "source": "RideX.mp4",
+                "content": "RideX Mobile App"
+            },
+            {
+                "source": "Techocre.mp4",
+                "content": "Techchore Branding Design"
+            }
+        ],
+        "slider_static_text": "We provide design and programming services tailored to every individual need.",
+        "slider_error_message": "Your browser does not support the video tag."
     },
     "services": {
         "services_headline": {
