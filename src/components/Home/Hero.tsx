@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
   const currentLocale = useLocale();
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  
+
   const changeLanguage = (newLocale: string) => {
     const pathWithoutLocale = pathname.replace(`/${currentLocale}`, '');
     const newPath = pathWithoutLocale || '/';
