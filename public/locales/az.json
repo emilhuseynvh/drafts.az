@@ -5,7 +5,7 @@
             "work": "işlər",
             "about": "Haqqımızda",
             "contact": "Əlaqə",
-            "home_page": "Ana səhifə" 
+            "home_page": "Ana səhifə"
         },
         "start_project": "Bizimlə əlaqə"
     },
@@ -16,7 +16,23 @@
     },
     "our_work": {
         "our_work": "İşlərimiz",
-        "work_slider_static_title": "Layihələrimizə nəzər salın"
+        "work_slider_static_title": "Layihələrimizə nəzər salın",
+        "slider_items": [
+            {
+                "source": "VovaFM.mp4",
+                "content": "VovaFM Açılış Səhifəsi"
+            },
+            {
+                "source": "RideX.mp4",
+                "content": "RideX Mobil Tətbiqi"
+            },
+            {
+                "source": "Techocre.mp4",
+                "content": "Techchore Brend Dizaynı"
+            }
+        ],
+        "slider_static_text": "Biz hər bir fərdi ehtiyaca uyğun dizayn və proqramlaşdırma xidmətləri təqdim edirik.",
+        "slider_error_message": "Sizin brauzeriniz video teqini dəstəkləmir."
     },
     "services": {
         "services_headline": {

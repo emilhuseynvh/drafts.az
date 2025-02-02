@@ -16,7 +16,23 @@
     },
     "our_work": {
         "our_work": "Наши работы",
-        "work_slider_static_title": "Взгляните на наши проекты"
+        "work_slider_static_title": "Взгляните на наши проекты",
+        "slider_items": [
+            {
+                "source": "VovaFM.mp4",
+                "content": "Главная страница VovaFM"
+            },
+            {
+                "source": "RideX.mp4",
+                "content": "Мобильное приложение RideX"
+            },
+            {
+                "source": "Techocre.mp4",
+                "content": "Бренд-дизайн Techchore"
+            }
+        ],
+        "slider_static_text": "Мы предоставляем услуги по дизайну и программированию, адаптированные под индивидуальные потребности.",
+        "slider_error_message": "Ваш браузер не поддерживает тег видео."
     },
     "services": {
         "services_headline": {
