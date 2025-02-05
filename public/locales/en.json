@@ -145,5 +145,156 @@
             ]
         },
         "contact": "Contact"
+    },
+    "payment": {
+        "cost": "Cost",
+        "pages": "pages",
+        "title": "Get a Price Quote",
+        "page": {
+            "title": "Static pages",
+            "desc": "How many static pages will there be?",
+            "price": 100
+        },
+        "design_complexity": {
+            "title": "Design complexity:",
+            "options": [
+                {
+                    "title": "Simple",
+                    "capsent": 1
+                },
+                {
+                    "title": "Medium",
+                    "capsent": 2
+                },
+                {
+                    "title": "Special",
+                    "capsent": 3
+                }
+            ]
+        },
+        "website_add_ons": [
+            {
+                "title": "Blog",
+                "price": 200
+            },
+            {
+                "title": "Member login /‍‍‍ Profiles",
+                "price": 400
+            },
+            {
+                "title": "Responsive",
+                "price": 100
+            },
+            {
+                "title": "Live Chat",
+                "price": 100
+            },
+            {
+                "title": "Form",
+                "price": 100
+            },
+            {
+                "title": "Gallery",
+                "price": 100
+            },
+            {
+                "title": "Contact Form",
+                "price": 400
+            },
+            {
+                "title": "Messaging",
+                "price": 400
+            },
+            {
+                "title": "Site Search",
+                "price": 50
+            },
+            {
+                "title": "Map Information / Geolocation",
+                "price": 100
+            },
+            {
+                "title": "Reservation",
+                "price": 400
+            },
+            {
+                "title": "Social Media Integration",
+                "price": 50
+            },
+            {
+                "title": "Analytics / Tracking",
+                "price": 50
+            },
+            {
+                "title": "Admin Panel",
+                "price": 300
+            }
+        ],
+        "search_engine_optimization" : [
+            {
+                "title" : "Search engine optimization",
+                "price" : 200
+            },
+            {
+                "title" : "Title Tags",
+                "price" : 100
+            },
+            {
+                "title" : "Keyword",
+                "price" : 300
+            },
+            {
+                "title" : "+20 Advanced Techniques",
+                "price" : 400
+            },
+            {
+                "title" : "Sitemap",
+                "price" : 100
+            }
+        ],
+        "ecommerce_add_ons" : [
+            {
+                "title" : "Payment",
+                "price" : 200
+            },
+            {
+                "title" : "Wishlist",
+                "price" : 300
+            },
+            {
+                "title" : "Basket",
+                "price" : 500
+            },
+            {
+                "title" : "Filter",
+                "price" : 300
+            },
+            {
+                "title" : "About the Product",
+                "price" : 200
+            },
+            {
+                "title" : "Products",
+                "price" : 300
+            },
+            {
+                "title" : "Logo design",
+                "price" : 300
+            }
+        ],
+        "logo_design" : [
+            {
+                "title" : "No need",
+                "price" : 0
+            },
+            {
+                "title" : "Simple",
+                "price" : 100
+            },
+            {
+                "title" : "Special",
+                "price" : 200
+            }
+        ]
     }
 }
