@@ -172,129 +172,144 @@
                 }
             ]
         },
-        "website_add_ons": [
+        "website_add_ons": {
+            "title": "Website add-ons",
+            "options": [
+                {
+                    "title": "Blog",
+                    "price": 200
+                },
+                {
+                    "title": "Member login /‍‍‍ Profiles",
+                    "price": 400
+                },
+                {
+                    "title": "Responsive",
+                    "price": 100
+                },
+                {
+                    "title": "Live Chat",
+                    "price": 100
+                },
+                {
+                    "title": "Form",
+                    "price": 100
+                },
+                {
+                    "title": "Gallery",
+                    "price": 100
+                },
+                {
+                    "title": "Contact Form",
+                    "price": 400
+                },
+                {
+                    "title": "Messaging",
+                    "price": 400
+                },
+                {
+                    "title": "Site Search",
+                    "price": 50
+                },
+                {
+                    "title": "Map Information / Geolocation",
+                    "price": 100
+                },
+                {
+                    "title": "Reservation",
+                    "price": 400
+                },
+                {
+                    "title": "Social Media Integration",
+                    "price": 50
+                },
+                {
+                    "title": "Analytics / Tracking",
+                    "price": 50
+                },
+                {
+                    "title": "Admin Panel",
+                    "price": 300
+                }
+            ]
+        },
+        "search_engine_optimization": [
             {
-                "title": "Blog",
+                "title": "Search engine optimization",
                 "price": 200
             },
             {
-                "title": "Member login /‍‍‍ Profiles",
+                "title": "Title Tags",
+                "price": 100
+            },
+            {
+                "title": "Keyword",
+                "price": 300
+            },
+            {
+                "title": "+20 Advanced Techniques",
                 "price": 400
             },
             {
-                "title": "Responsive",
+                "title": "Sitemap",
                 "price": 100
+            }
+        ],
+        "ecommerce_add_ons": {
+        "title" : "E-commerce add-ons",
+        "options":  [
+            
+            {
+                "title": "Payment",
+                "price": 200
             },
             {
-                "title": "Live Chat",
-                "price": 100
+                "title": "Wishlist",
+                "price": 300
             },
             {
-                "title": "Form",
-                "price": 100
+                "title": "Basket",
+                "price": 500
             },
             {
-                "title": "Gallery",
-                "price": 100
+                "title": "Filter",
+                "price": 300
             },
             {
-                "title": "Contact Form",
-                "price": 400
+                "title": "About the Product",
+                "price": 200
             },
             {
-                "title": "Messaging",
-                "price": 400
+                "title": "Products",
+                "price": 300
             },
             {
-                "title": "Site Search",
-                "price": 50
-            },
-            {
-                "title": "Map Information / Geolocation",
-                "price": 100
-            },
-            {
-                "title": "Reservation",
-                "price": 400
-            },
-            {
-                "title": "Social Media Integration",
-                "price": 50
-            },
-            {
-                "title": "Analytics / Tracking",
-                "price": 50
-            },
-            {
-                "title": "Admin Panel",
+                "title": "Logo design",
                 "price": 300
             }
-        ],
-        "search_engine_optimization" : [
+        ]},
+        "logo_design": {
+            "title" : "Logo design",
+            "options" : [
             {
-                "title" : "Search engine optimization",
-                "price" : 200
+                "title": "No need",
+                "price": 0
             },
             {
-                "title" : "Title Tags",
-                "price" : 100
+                "title": "Simple",
+                "price": 100
             },
             {
-                "title" : "Keyword",
-                "price" : 300
-            },
-            {
-                "title" : "+20 Advanced Techniques",
-                "price" : 400
-            },
-            {
-                "title" : "Sitemap",
-                "price" : 100
+                "title": "Special",
+                "price": 200
             }
-        ],
-        "ecommerce_add_ons" : [
-            {
-                "title" : "Payment",
-                "price" : 200
-            },
-            {
-                "title" : "Wishlist",
-                "price" : 300
-            },
-            {
-                "title" : "Basket",
-                "price" : 500
-            },
-            {
-                "title" : "Filter",
-                "price" : 300
-            },
-            {
-                "title" : "About the Product",
-                "price" : 200
-            },
-            {
-                "title" : "Products",
-                "price" : 300
-            },
-            {
-                "title" : "Logo design",
-                "price" : 300
-            }
-        ],
-        "logo_design" : [
-            {
-                "title" : "No need",
-                "price" : 0
-            },
-            {
-                "title" : "Simple",
-                "price" : 100
-            },
-            {
-                "title" : "Special",
-                "price" : 200
-            }
-        ]
+        ]},
+        "summary" : {
+            "static_pages" : "Static pages",
+            "extras" : "Extras",
+            "SEO" : "SEO",
+            "E-commerce" : "E-commerce",
+            "logo_design" : "Logo design" 
+        }
     }
 }

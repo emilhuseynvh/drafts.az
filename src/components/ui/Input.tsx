@@ -4,12 +4,14 @@ interface InputProps {
     max?: number;
     min?: number;
     step?: number;
-    inpValue?: number
+    inpValue?: number;
+    value?: number;
+    setValue: (value: number) => void;
 }
 
-const Input: React.FC<InputProps> = ({ max, min, step, inpValue }) => {
+const Input: React.FC<InputProps> = ({ max, min, step, inpValue, value, setValue }) => {
     return (
-        <input max={max} defaultValue={inpValue} min={min} step={step} className='w-full custom-range' type="range" />
+        <input onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(+e.target.value)} max={max} value={value} min={min} step={step} className='w-full custom-range' type="range" />
     );
 };
 
