@@ -172,64 +172,67 @@
                 }
             ]
         },
-        "website_add_ons": [
-            {
-                "title": "Bloq",
-                "price": 200
-            },
-            {
-                "title": "İstifadəçi girişi / Profillər",
-                "price": 400
-            },
-            {
-                "title": "Responsiv",
-                "price": 100
-            },
-            {
-                "title": "Canlı söhbət",
-                "price": 100
-            },
-            {
-                "title": "Form",
-                "price": 100
-            },
-            {
-                "title": "Qalereya",
-                "price": 100
-            },
-            {
-                "title": "Əlaqə forması",
-                "price": 400
-            },
-            {
-                "title": "Mesajlaşma",
-                "price": 400
-            },
-            {
-                "title": "Sayt axtarışı",
-                "price": 50
-            },
-            {
-                "title": "Xəritə məlumatı / Geolokasiya",
-                "price": 100
-            },
-            {
-                "title": "Rezervasiya",
-                "price": 400
-            },
-            {
-                "title": "Sosial media inteqrasiyası",
-                "price": 50
-            },
-            {
-                "title": "Analitika / İzləmə",
-                "price": 50
-            },
-            {
-                "title": "Admin paneli",
-                "price": 300
-            }
-        ],
+        "website_add_ons": {
+            "title": "Veb sayt əlavələri",
+            "options": [
+                {
+                    "title": "Bloq",
+                    "price": 200
+                },
+                {
+                    "title": "İstifadəçi girişi / Profillər",
+                    "price": 400
+                },
+                {
+                    "title": "Responsiv",
+                    "price": 100
+                },
+                {
+                    "title": "Canlı söhbət",
+                    "price": 100
+                },
+                {
+                    "title": "Form",
+                    "price": 100
+                },
+                {
+                    "title": "Qalereya",
+                    "price": 100
+                },
+                {
+                    "title": "Əlaqə forması",
+                    "price": 400
+                },
+                {
+                    "title": "Mesajlaşma",
+                    "price": 400
+                },
+                {
+                    "title": "Sayt axtarışı",
+                    "price": 50
+                },
+                {
+                    "title": "Xəritə məlumatı / Geolokasiya",
+                    "price": 100
+                },
+                {
+                    "title": "Rezervasiya",
+                    "price": 400
+                },
+                {
+                    "title": "Sosial media inteqrasiyası",
+                    "price": 50
+                },
+                {
+                    "title": "Analitika / İzləmə",
+                    "price": 50
+                },
+                {
+                    "title": "Admin paneli",
+                    "price": 300
+                }
+            ]
+        },
         "search_engine_optimization": [
             {
                 "title": "Axtarış sistemi optimizasiyası",
@@ -252,49 +255,62 @@
                 "price": 100
             }
         ],
-        "ecommerce_add_ons": [
-            {
-                "title": "Ödəniş",
-                "price": 200
-            },
-            {
-                "title": "İstək siyahısı",
-                "price": 300
-            },
-            {
-                "title": "Səbət",
-                "price": 500
-            },
-            {
-                "title": "Filtr",
-                "price": 300
-            },
-            {
-                "title": "Məhsul haqqında",
-                "price": 200
-            },
-            {
-                "title": "Məhsullar",
-                "price": 300
-            },
-            {
-                "title": "Loqo dizaynı",
-                "price": 300
-            }
-        ],
-        "logo_design": [
-            {
-                "title": "Ehtiyac yoxdur",
-                "price": 0
-            },
-            {
-                "title": "Sadə",
-                "price": 100
-            },
-            {
-                "title": "Xüsusi",
-                "price": 200
-            }
-        ]
+        "ecommerce_add_ons": {
+            "title": "E-commerse əlavələri",
+            "options": [
+                {
+                    "title": "Ödəniş",
+                    "price": 200
+                },
+                {
+                    "title": "İstək siyahısı",
+                    "price": 300
+                },
+                {
+                    "title": "Səbət",
+                    "price": 500
+                },
+                {
+                    "title": "Filtr",
+                    "price": 300
+                },
+                {
+                    "title": "Məhsul haqqında",
+                    "price": 200
+                },
+                {
+                    "title": "Məhsullar",
+                    "price": 300
+                },
+                {
+                    "title": "Loqo dizaynı",
+                    "price": 300
+                }
+            ]
+        },
+        "logo_design": {
+            "title": "Loqo dizaynı",
+            "options": [
+                {
+                    "title": "Ehtiyac yoxdur",
+                    "price": 0
+                },
+                {
+                    "title": "Sadə",
+                    "price": 100
+                },
+                {
+                    "title": "Xüsusi",
+                    "price": 200
+                }
+            ]
+        },
+        "summary": {
+            "static_pages": "Statik səhifələr",
+            "extras": "Əlavələr",
+            "SEO": "SEO",
+            "E-commerce": "Elektron ticarət",
+            "logo_design": "Logo dizaynı"
+        }
     }
 }
