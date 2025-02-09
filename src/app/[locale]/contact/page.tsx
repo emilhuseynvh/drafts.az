@@ -51,7 +51,7 @@ const Page = () => {
                         <Form className="!max-w-xl w-full">
                             <div className="mb-6 flex flex-col md:flex-row gap-6">
                                 <div className="w-full">
-                                    <Field name="name" type="text" onFocus={() => setFocusedField('name')} className={`bg-[#F7F7F1] border border-[#AAA] duration-300 ${focusedField ? 'text-[#151515]' : 'text-[#909090]'} outline-none text-sm rounded-xl block w-full py-3 px-4`} placeholder={t("contact.form.name")} />
+                                    <Field name="name" type="text" onFocus={() => setFocusedField('name')} className={`bg-[#F7F7F1] border border-[#AAA] duration-300 ${focusedField ? 'text-[#151515]' : 'text-[#909090]'} outline-none  text-sm rounded-xl block w-full py-3 px-4`} placeholder={t("contact.form.name")} />
                                     {errors.name ? <p className="text-primary text-xs">{errors.name}</p> : null}
                                 </div>
                                 <div className="w-full">
