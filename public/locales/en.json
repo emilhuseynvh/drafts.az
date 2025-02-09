@@ -256,60 +256,79 @@
             }
         ],
         "ecommerce_add_ons": {
-        "title" : "E-commerce add-ons",
-        "options":  [
-            
-            {
-                "title": "Payment",
-                "price": 200
-            },
-            {
-                "title": "Wishlist",
-                "price": 300
-            },
-            {
-                "title": "Basket",
-                "price": 500
-            },
-            {
-                "title": "Filter",
-                "price": 300
-            },
-            {
-                "title": "About the Product",
-                "price": 200
-            },
-            {
-                "title": "Products",
-                "price": 300
-            },
-            {
-                "title": "Logo design",
-                "price": 300
-            }
-        ]},
+            "title": "E-commerce add-ons",
+            "options": [
+                {
+                    "title": "Payment",
+                    "price": 200
+                },
+                {
+                    "title": "Wishlist",
+                    "price": 300
+                },
+                {
+                    "title": "Basket",
+                    "price": 500
+                },
+                {
+                    "title": "Filter",
+                    "price": 300
+                },
+                {
+                    "title": "About the Product",
+                    "price": 200
+                },
+                {
+                    "title": "Products",
+                    "price": 300
+                },
+                {
+                    "title": "Logo design",
+                    "price": 300
+                }
+            ]
+        },
         "logo_design": {
-            "title" : "Logo design",
-            "options" : [
-            {
-                "title": "No need",
-                "price": 0
-            },
-            {
-                "title": "Simple",
-                "price": 100
-            },
-            {
-                "title": "Special",
-                "price": 200
-            }
-        ]},
-        "summary" : {
-            "static_pages" : "Static pages",
-            "extras" : "Extras",
-            "SEO" : "SEO",
-            "E-commerce" : "E-commerce",
-            "logo_design" : "Logo design" 
+            "title": "Logo design",
+            "options": [
+                {
+                    "title": "No need",
+                    "price": 0
+                },
+                {
+                    "title": "Simple",
+                    "price": 100
+                },
+                {
+                    "title": "Special",
+                    "price": 200
+                }
+            ]
+        },
+        "summary": {
+            "static_pages": "Static pages",
+            "extras": "Extras",
+            "SEO": "SEO",
+            "E-commerce": "E-commerce",
+            "logo_design": "Logo design"
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "first_headline": "Pleasure to connect",
+        "second_headline": "with you",
+        "planner": {
+            "content": "For general questions, please complete the form to reach us. If you already have project specifics, visit our project planner for a detailed step-by-step approach.",
+            "button": "Go to planner",
+            "contact_title": "Or write to us!"
+        },
+        "form": {
+            "name": "name",
+            "phone": "Phone number",
+            "email": "email  adress",
+            "area": "Tell about your project",
+            "content": "By submiting this form I accept the Privacy Policy of this site.",
+            "button": "Send message"
         }
     }
 }
