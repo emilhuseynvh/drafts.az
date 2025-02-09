@@ -312,5 +312,23 @@
             "E-commerce": "Elektron ticarət",
             "logo_design": "Logo dizaynı"
         }
+    },
+    "contact": {
+        "title": "Əlaqə",
+        "first_headline": "Tanış olmağımıza",
+        "second_headline": "şadam",
+        "planner": {
+            "content": "Ümumi suallar üçün bizimlə əlaqə saxlamaq üçün formu doldurun. Əgər artıq layihənizlə bağlı detallı məlumatlarınız varsa, addım-addım yanaşma üçün layihə planlaşdırıcımıza baxın.",
+            "button": "Planlaşdırıcıya keçid",
+            "contact_title": "Və ya bizə yazın!"
+        },
+        "form": {
+            "name": "Ad",
+            "phone": "Telefon nömrəsi",
+            "email": "Email ünvanı",
+            "area": "Layihəniz haqqında danışın",
+            "content": "Bu formu göndərməklə bu saytın Məxfilik Siyasətini qəbul edirəm.",
+            "button": "Mesaj göndər"
+        }
     }
 }
