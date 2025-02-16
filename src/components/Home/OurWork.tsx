@@ -44,7 +44,7 @@ const OurWork: React.FC = () => {
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
         >
           {t.raw('our_work.slider_items').map((item: any, index: number) => (
-            <SwiperSlide>
+            <SwiperSlide key={index}>
               {activeIndex === index && (
                 <>
                   <div className='w-full flex items-end justify-between flex-col-reverse md:flex-row gap-5 md:gap-2 md:mt-25'>

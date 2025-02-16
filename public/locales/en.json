@@ -318,7 +318,8 @@
         "first_headline": "Pleasure to connect",
         "second_headline": "with you",
         "planner": {
-            "content": "For general questions, please complete the form to reach us. If you already have project specifics, visit our project planner for a detailed step-by-step approach.",
+            "content_desktop": "For general questions, please complete the form to reach us. If you already have project specifics, visit our project planner for a detailed step-by-step approach.",
+            "content_mobile": "For general inquiries, fill out the form. If you have project details, visit our project planner for a step-by-step guide.",
             "button": "Go to planner",
             "contact_title": "Or write to us!"
         },
@@ -330,5 +331,24 @@
             "content": "By submiting this form I accept the Privacy Policy of this site.",
             "button": "Send message"
         }
+    },
+    "aboutSection": {
+        "title": "About",
+        "first_headline": "Crafted to elevate brands",
+        "second_headline": "and make them stand out",
+        "sections": [
+            {
+                "title": "OUR MISSION",
+                "content": "We delve deep into research, putting users at the heart of our design process. By testing with real customers, we craft digital interfaces and experiences that are not just well-informed but also resonate with authenticity. Our aim? To enrich lives and revolutionize businesses through innovation and empathy."
+            },
+            {
+                "title": "OUR VISION",
+                "content": "We're on a mission to make millions smile by crafting Visual identities and digital interfaces with purpose for the world's leading brands. With every click and swipe, we're weaving experiences that not only elevate lives but also redefine digital engagement. Join us in shaping a brighter, more connected future, one pixel at a time."
+            },
+            {
+                "title": "AUTHENTIC",
+                "content": "In every interaction and solution, we etch the imprint of authenticity, a testament to our dedication to fostering accurate connections. Our ethos? To weave sincerity into every pixel, building bridges that stand the test of time and nurture lasting relationships."
+            }
+        ]
     }
 }
