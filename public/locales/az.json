@@ -330,5 +330,21 @@
             "content": "Bu formu göndərməklə bu saytın Məxfilik Siyasətini qəbul edirəm.",
             "button": "Mesaj göndər"
         }
+    },
+    "aboutSection": {
+        "sections": [
+            {
+                "title": "MİSSİYAMIZ",
+                "content": "Biz tədqiqatlara dərindən yanaşırıq və istifadəçiləri dizayn prosesimizin mərkəzinə qoyuruq. Həqiqi müştərilər üzərində testlər apararaq, yalnız məlumatlandırıcı deyil, eyni zamanda autentikliyi ilə rezonans yaradan rəqəmsal interfeyslər və təcrübələr yaradırıq. Məqsədimiz? İnnovasiya və empatiya vasitəsilə həyatları zənginləşdirmək və biznesləri inqilabi şəkildə dəyişdirmək."
+            },
+            {
+                "title": "VİZYONUMUZ",
+                "content": "Dünyanın aparıcı markaları üçün vizual identifikasiyalar və məqsədyönlü rəqəmsal interfeyslər yaradaraq milyonlarla insanı sevindirməyə çalışırıq. Hər klik və sürüşdürmə ilə biz yalnız həyatları yüksəltmək deyil, eyni zamanda rəqəmsal qarşılıqlı əlaqəni yenidən müəyyənləşdirən təcrübələr yaradırıq. Daha parlaq və daha əlaqəli bir gələcək formalaşdırmaq üçün bizə qoşulun – bir piksel ilə."
+            },
+            {
+                "title": "AUTENTİKLİK",
+                "content": "Hər qarşılıqlı əlaqədə və həllimizdə autentiklik izini həkk edirik, dəqiq əlaqələr qurmağa olan sadiqliyimizin sübutu olaraq. Etosumuz? Hər pikselə səmimiyyəti toxumaq, zamanın sınağına davam gətirən körpülər qurmaq və uzunmüddətli münasibətləri qorumaq."
+            }
+        ]
     }
 }

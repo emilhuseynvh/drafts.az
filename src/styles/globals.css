@@ -4,7 +4,7 @@
     --color-primary: #DB3D3E;
     --color-primary-bg: #151515;
     --color-primary-white: #F7F7F1;
-    --breakpoint-xs: 25rem
+    --breakpoint-xs: 25rem;
 }
 
 @layer utilities {

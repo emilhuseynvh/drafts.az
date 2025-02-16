@@ -12,37 +12,40 @@ interface AccordionProps extends AccordionItem {
         content?: string;
         buttons?: string[];
     },
-    handleFunction: (index: number) => void,
-    activeIndex: number | null,
+    handleFunction?: (index: number) => void,
+    activeIndex?: number | null,
     index: number,
-    faq: boolean
+    faq?: boolean,
+    about?: boolean
 }
-const Accordion: React.FC<AccordionProps> = ({ item, handleFunction, activeIndex, index, faq }) => {
+const Accordion: React.FC<AccordionProps> = ({ item, handleFunction = () => { }, activeIndex, index, faq, about }) => {
+
+
 
     return (
         <div
             onClick={() => handleFunction(index)}
-            className="mb-6 cursor-pointer group"
+            className={`${about ? 'mb-10  flex flex-col justify-between' : 'mb-6 cursor-pointer group'} `}
         >
-            <div className="flex items-start gap-5 md:gap-11">
-                <div className={`${faq ? 'hidden' : 'block'}`}>
+            <div className={`flex items-start ${about ? 'flex-col gap-3 md:gap-5' : 'flex-row gap-5 md:gap-11'}`}>
+                <div className={`${faq ? 'hidden' : 'block'} ${about && index % 2 && 'sm:pl-5 lg:pl-13'}`}>
                     <span className="text-white">.0{index + 1}</span>
                 </div>
-                <div className="w-full">
-                    <div className="pb-4 md:pb-8 group">
+                <div className={`w-full flex flex-col ${about ? 'sm:min-h-59 md:h-65 justify-between ' : 'h-full'}`}>
+                    <div className={`pb-4 md:pb-8 group  ${about && index % 2 && 'sm:pl-5 lg:pl-13'}`}>
                         <div className="flex justify-between items-center">
-                            <h2 className={`text-[#F7F7F1] duration-500 ${faq && activeIndex !== index && 'md:group-hover:text-4xl'} ${faq ? 'text-lg md:text-2xl' : 'text-3xl md:text-[56px]'} `}>{item.title}</h2>
+                            <h2 className={`text-[#F7F7F1] duration-500 ${faq && activeIndex !== index && 'md:group-hover:text-4xl'} ${faq ? 'text-lg md:text-2xl' : 'text-3xl lg:text-[56px]'} `}>{item.title}</h2>
                             <Image
                                 src={faq ? ArrowIcon : PlusIcon}
                                 alt="Accordion toggle icon"
-                                className={` transition-transform duration-700  w-6 h-6 md:w-8 md:h-8  ${activeIndex !== index && faq ? '-rotate-135 group-hover:-rotate-90' : ''} ${activeIndex === index ? "rotate-45" : ""}`}
+                                className={` transition-transform duration-700  w-6 h-6 md:w-8 md:h-8 ${about ? 'hidden' : 'block'}  ${activeIndex !== index && faq ? '-rotate-135 group-hover:-rotate-90' : ''} ${activeIndex === index ? "rotate-45" : ""}`}
                             />
                         </div>
                         <div
-                            className={`overflow-hidden transition-[max-height]  ease-linear duration-700 ${activeIndex === index ? "max-h-screen" : "max-h-0"
+                            className={`overflow-hidden transition-[max-height]  ease-linear duration-700 ${!about ? (activeIndex === index ? "max-h-screen" : "max-h-0") : "max-h-screen"
                                 }`}
                         >
-                            <p className="text-[#AAA] py-8">{faq ? item.firstContent : item.content}</p>
+                            <p className={`text-[#AAA] ${about ? 'max-w-110 py-3 md:py-6' : ' py-8'}`}>{faq ? item.firstContent : item.content}</p>
                             <p className="text-[#AAA]">{faq && item.secondContent}</p>
                             <ul className="flex flex-wrap gap-3">
                                 {item.buttons && item.buttons.map((list, listIndex) => (
@@ -56,8 +59,8 @@ const Accordion: React.FC<AccordionProps> = ({ item, handleFunction, activeIndex
                             </ul>
                         </div>
                     </div>
-                    <div className="w-full h-[2px] bg-[#F7F7F1]  duration-500">
-                        <div className={`w-0 h-full duration-1000 ease-in-out ${!faq && 'group-hover:bg-red-500 group-hover:w-full'}`}></div>
+                    <div className={`w-full h-[2px] duration-500 ${about ? 'bg-[#AAA]' : 'bg-[#F7F7F1]'}`}>
+                        {!about && <div className={`w-0 h-full duration-1000 ease-in-out ${!faq && 'group-hover:bg-red-500 group-hover:w-full'}`}></div>}
                     </div>
                 </div>
             </div>
