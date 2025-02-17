@@ -42,7 +42,7 @@ const page = () => {
             <div className='flex justify-end'>
                 <div className='w-full max-w-230 grid grid-cols-1 sm:grid-cols-2 items-center'>
                     {aboutSection.map((item, index) => (
-                        <Accordion item={item} index={index} about={true} />
+                        <Accordion key={index} item={item} index={index} about={true} />
                     ))}
                 </div>
             </div>
