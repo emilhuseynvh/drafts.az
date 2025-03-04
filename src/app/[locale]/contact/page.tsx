@@ -3,11 +3,12 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
 import Button from '@/components/ui/Button'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import * as yup from 'yup'
 import { Field, Formik, Form } from 'formik'
 import HeadSection from '@/components/HeadSection'
 import plannerIcon from '../../../../public/icons/planner.svg'
+import Link from 'next/link'
 
 const validationSchema = yup.object().shape({
     name: yup.string().required("Name is required"),
@@ -22,6 +23,7 @@ const Page = () => {
     const t = useTranslations();
     const [focusedField, setFocusedField] = useState<string | null>(null);
     const [text, setText] = useState<string>("")
+    const currentLocale = useLocale()
     useEffect(() => {
         const updateText = () => setText(window.innerWidth > 768 ? t("contact.planner.content_desktop") : t("contact.planner.content_mobile"))
         updateText()
@@ -93,10 +95,10 @@ const Page = () => {
                         </div>
                         <div className='w-full xs:w-[271px]'>
                             <Button bgColor='white'>
-                                <span className='z-10 font-medium group-hover:text-white duration-300'>{t("contact.planner.button")}</span>
+                                <Link  href={`/${currentLocale}/contact/calculator`} className='z-10 font-medium group-hover:text-white duration-300'>{t("contact.planner.button")}</Link>
                                 <svg className='z-10 ' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path className='group-hover:stroke-white  duration-300' d="M7 3H5C3.895 3 3 3.895 3 5V19C3 20.105 3.895 21 5 21H17C18.105 21 19 20.105 19 19V18" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                    <path className='group-hover:stroke-white  duration-300' fillRule="evenodd" clipRule="evenodd" d="M13 17.0002L16.15 16.6112C16.371 16.5842 16.577 16.4832 16.735 16.3262L21.366 11.6952C22.211 10.8502 22.211 9.48024 21.366 8.63424V8.63424C20.521 7.78924 19.151 7.78924 18.305 8.63424L13.745 13.1942C13.592 13.3472 13.493 13.5452 13.462 13.7602L13 17.0002Z" stroke="#151515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path className='group-hover:stroke-white  duration-300' fillRule="evenodd" clipRule="evenodd" d="M13 17.0002L16.15 16.6112C16.371 16.5842 16.577 16.4832 16.735 16.3262L21.366 11.6952C22.211 10.8502 22.211 9.48024 21.366 8.63424V8.63424C20.521 7.78924 19.151 7.78924 18.305 8.63424L13.745 13.1942C13.592 13.3472 13.493 13.5452 13.462 13.7602L13 17.0002Z" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                     <path className='group-hover:stroke-white  duration-300' fillRule="evenodd" clipRule="evenodd" d="M13.5 4.5H8.5C7.672 4.5 7 3.828 7 3V3C7 2.172 7.672 1.5 8.5 1.5H13.5C14.328 1.5 15 2.172 15 3V3C15 3.828 14.328 4.5 13.5 4.5Z" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                     <path className='group-hover:stroke-white  duration-300' d="M7 8H13" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                     <path className='group-hover:stroke-white  duration-300' d="M7 12H11" stroke="#151515" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />

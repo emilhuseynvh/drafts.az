@@ -1,15 +1,16 @@
-'use client'
+"use client"
 import Image from 'next/image';
 import React, { useState } from 'react';
 import logo from '../../public/logo.svg';
 import logoBlack from '../../public/logo-black.svg';
 import Button from './ui/Button';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import HamburgerMenu from './HamburgerMenu';
+import Link from 'next/link';
 const Header: React.FC = () => {
   const t = useTranslations()
   const [flag, setFlag] = useState<boolean>(false);
-
+  const locale = useLocale()
   return (
     <>
       <header className='md:pt-6 md:absolute fixed z-50 top-0 left-0 right-0 md:h-auto h-17 md:bg-transparent bg-primary-white'>
@@ -26,10 +27,9 @@ const Header: React.FC = () => {
             </div>
             <Image className='cursor-pointer md:hidden block' src={logoBlack} alt='Logo' width={100} height={36} />
             <ul className='md:flex ml-16 lg:gap-9  hidden gap-4 text-white font-normal leading-6 text-base'>
-              <li className='cursor-pointer text-after relative'>{t('header.list.services')}</li>
-              <li className='cursor-pointer text-after relative'>{t('header.list.work')}</li>
-              <li className='cursor-pointer text-after relative'>{t('header.list.about')}</li>
-              <li className='cursor-pointer text-after relative'>{t('header.list.contact')}</li>
+              <li className='cursor-pointer text-after relative'><Link href={`/${locale}`}>{t('header.list.home_page')}</Link></li>
+              <li className='cursor-pointer text-after relative'><Link href={`/${locale}/about`}>{t('header.list.about')}</Link></li>
+              <li className='cursor-pointer text-after relative'><Link href={`/${locale}/contact`}>{t('header.list.contact')}</Link></li>
             </ul>
           </div>
           <div className='lg:w-[274] w-[196px] relative md:block hidden bg-primary-bg pl-3 pr-1 pt-3.5 pb-3 border-b-l-4'>
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
         </div>
       </header >
       <div className='h-[40px] w-full'></div>
-      <HamburgerMenu flag={flag} setFlag={setFlag}  />
+      <HamburgerMenu flag={flag} setFlag={setFlag} />
     </>
   );
 };

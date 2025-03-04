@@ -1,8 +1,6 @@
 {
     "header": {
         "list": {
-            "services": "Servis",
-            "work": "işlər",
             "about": "Haqqımızda",
             "contact": "Əlaqə",
             "home_page": "Ana səhifə"
@@ -318,7 +316,8 @@
         "first_headline": "Tanış olmağımıza",
         "second_headline": "şadam",
         "planner": {
-            "content": "Ümumi suallar üçün bizimlə əlaqə saxlamaq üçün formu doldurun. Əgər artıq layihənizlə bağlı detallı məlumatlarınız varsa, addım-addım yanaşma üçün layihə planlaşdırıcımıza baxın.",
+            "content_desktop": "Ümumi suallar üçün bizimlə əlaqə saxlamaq üçün formanı doldurun. Əgər artıq layihə detalları varsa, addım-addım yanaşma üçün layihə planlayıcımızı ziyarət edin.",
+            "content_mobile": "Ümumi sorğular üçün formanı doldurun. Əgər layihə detalları varsa, addım-addım bələdçi üçün layihə planlayıcımıza baxın.",
             "button": "Planlaşdırıcıya keçid",
             "contact_title": "Və ya bizə yazın!"
         },
@@ -332,18 +331,47 @@
         }
     },
     "aboutSection": {
+        "title": "Haqqımızda",
+        "first_headline": "Brendləri yüksəltmək və onları",
+        "second_headline": "fərqləndirmək üçün hazırlanmışdır.",
         "sections": [
             {
                 "title": "MİSSİYAMIZ",
-                "content": "Biz tədqiqatlara dərindən yanaşırıq və istifadəçiləri dizayn prosesimizin mərkəzinə qoyuruq. Həqiqi müştərilər üzərində testlər apararaq, yalnız məlumatlandırıcı deyil, eyni zamanda autentikliyi ilə rezonans yaradan rəqəmsal interfeyslər və təcrübələr yaradırıq. Məqsədimiz? İnnovasiya və empatiya vasitəsilə həyatları zənginləşdirmək və biznesləri inqilabi şəkildə dəyişdirmək."
+                "content": "Biz araşdırmaya dərinləşirik və istifadəçiləri dizayn prosesimizin mərkəzinə qoyuruq. Həqiqi müştərilərlə test edərək, təkcə məlumatlı deyil, həm də orijinallığı ilə rezonans doğuran rəqəmsal interfeyslər və təcrübələr yaradırıq. Məqsədimiz? İnnovasiya və empatiya vasitəsilə həyatı zənginləşdirmək və biznesləri inqilabi şəkildə dəyişməkdir."
             },
             {
-                "title": "VİZYONUMUZ",
-                "content": "Dünyanın aparıcı markaları üçün vizual identifikasiyalar və məqsədyönlü rəqəmsal interfeyslər yaradaraq milyonlarla insanı sevindirməyə çalışırıq. Hər klik və sürüşdürmə ilə biz yalnız həyatları yüksəltmək deyil, eyni zamanda rəqəmsal qarşılıqlı əlaqəni yenidən müəyyənləşdirən təcrübələr yaradırıq. Daha parlaq və daha əlaqəli bir gələcək formalaşdırmaq üçün bizə qoşulun – bir piksel ilə."
+                "title": "BAXIŞIMIZ",
+                "content": "Biz dünyanın aparıcı brendləri üçün məqsədyönlü vizual identikliklər və rəqəmsal interfeyslər yaradaraq milyonlarla insanın üzünə təbəssüm bəxş etməyi hədəfləyirik. Hər klik və sürüşdürmə ilə biz təkcə həyatı yüksəltməyən, həm də rəqəmsal qarşılıqlı əlaqəni yenidən müəyyən edən təcrübələr qururuq. Daha parlaq və daha bağlı bir gələcək qurmaq üçün bizə qoşulun, bunu bir piksel ilə həyata keçirək."
             },
             {
-                "title": "AUTENTİKLİK",
-                "content": "Hər qarşılıqlı əlaqədə və həllimizdə autentiklik izini həkk edirik, dəqiq əlaqələr qurmağa olan sadiqliyimizin sübutu olaraq. Etosumuz? Hər pikselə səmimiyyəti toxumaq, zamanın sınağına davam gətirən körpülər qurmaq və uzunmüddətli münasibətləri qorumaq."
+                "title": "ORİJİNALLIQ",
+                "content": "Hər qarşılıqlı əlaqə və həllimizdə biz orijinallığın izini qoyuruq. Bu, dəqiq və səmimi əlaqələr yaratmaq öhdəliyimizin sübutudur. Etikamız? Hər pikselə səmimiyyəti toxuyaraq, zamanın sınağına tab gətirən və uzunmüddətli münasibətləri quran körpülər yaratmaqdır."
+            }
+        ],
+        "about_us": [
+            {
+                "title": "Maraq",
+                "content": "Biz ideya istehsalçılarıyıq, innovasiya dalğalarından istifadə edirik. Əvvəlcədən qurulmuş fikirləri sarsıdaraq, marağı oyadırıq və kəşfi alovlandırırıq."
+            },
+            {
+                "title": "Ünsiyyət",
+                "content": "Biz hər zaman tələblərinizə cavab verməyə hazırıq, beləliklə saat zonaları barədə narahat olmağınıza ehtiyac yoxdur. Dünyanın harasında olursanız olun, sanki biz küncdəki ofisimizdəyik."
+            },
+            {
+                "title": "Şəffaflıq",
+                "content": "Drafts-da etdiyimiz hər şey metodik yanaşma ilə edilir, çünki biz şəffaflığa güclü şəkildə inanırıq. Müştərilərimizi layihənin hər bir addımında məlumatlı saxlayırıq."
+            },
+            {
+                "title": "Fleksibilik",
+                "content": "Biz müəyyən edilmiş və büdcə dostu bir yanaşmaya riayət edirik. Gizli xərclər yoxdur. Komandamız zamanında təhvil verməyi və verdiyi vədlərə riayət etməyi ciddi şəkildə izləyir. Son məqsədimiz müştərilərimizin tələblərini təmin etməkdir."
+            },
+            {
+                "title": "Çətinlik",
+                "content": "Biz tapmacaları açmaq həyəcanı ilə qidalanırıq, mürəkkəbliyi qızıl fürsətlərə çeviririk. Hər yeni çətinliklə biz mümkün olanı yenidən təyin edirik və maneələri uğur yolunda addımlara çeviririk."
+            },
+            {
+                "title": "Təslimatlar",
+                "content": "Strategiyadan gerçəkləşməyə qədər, birləşmiş komandamız layihənizi dəyişməz ekspertlik və mükəmməl icra ilə idarə edir. Hər addımda əməkdaşlıqlarımızı sinxronlaşdırırıq, səyahətin həm ardıcıl, həm də istisnai olmasını təmin edirik."
             }
         ]
     }

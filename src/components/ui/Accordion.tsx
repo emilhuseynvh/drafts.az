@@ -25,16 +25,17 @@ const Accordion: React.FC<AccordionProps> = ({ item, handleFunction = () => { },
     return (
         <div
             onClick={() => handleFunction(index)}
-            className={`${about ? 'mb-10  flex flex-col justify-between' : 'mb-6 cursor-pointer group'} `}
+            className={`${about ? 'h-full  flex flex-col justify-between' : 'mb-6 cursor-pointer group'} `}
         >
-            <div className={`flex items-start ${about ? 'flex-col gap-3 md:gap-5' : 'flex-row gap-5 md:gap-11'}`}>
-                <div className={`${faq ? 'hidden' : 'block'} ${about && index % 2 && 'sm:pl-5 lg:pl-13'}`}>
+            <div className={`flex items-start h-full ${about ? 'flex-col gap-3 md:gap-5' : 'flex-row gap-5 md:gap-11'}`}>
+                <div className={`${faq ? 'hidden' : 'block'} ${about && index % 2 && 'sm:ml-5 lg:ml-13'}`}>
                     <span className="text-white">.0{index + 1}</span>
                 </div>
-                <div className={`w-full flex flex-col ${about ? 'sm:min-h-59 md:h-65 justify-between ' : 'h-full'}`}>
-                    <div className={`pb-4 md:pb-8 group  ${about && index % 2 && 'sm:pl-5 lg:pl-13'}`}>
-                        <div className="flex justify-between items-center">
-                            <h2 className={`text-[#F7F7F1] duration-500 ${faq && activeIndex !== index && 'md:group-hover:text-4xl'} ${faq ? 'text-lg md:text-2xl' : 'text-3xl lg:text-[56px]'} `}>{item.title}</h2>
+                <div className={`w-full h-full flex flex-col ${about ? 'sm:min-h-60 md:h-70 justify-between ' : 'h-full'}`}>
+                    <div className={`${about ? 'pb-4 sm:pb-0' : 'pb-4 md:pb-8'} group  ${about && index % 2 && 'sm:pl-5 lg:pl-13'}`}>
+                        <div className={`flex items-center ${about ? 'gap-3 lg:-ml-5' : 'justify-between'}`}>
+                            <div className={`w-1.5 h-1.5 bg-primary rounded-full ${about ? 'block' : 'hidden'}`}></div>
+                            <h2 className={`text-[#F7F7F1] duration-500   ${faq && activeIndex !== index && 'md:group-hover:text-4xl'} ${faq ? 'text-lg md:text-2xl' : 'text-3xl lg:text-[56px]'} `}>{item.title}</h2>
                             <Image
                                 src={faq ? ArrowIcon : PlusIcon}
                                 alt="Accordion toggle icon"
@@ -59,12 +60,12 @@ const Accordion: React.FC<AccordionProps> = ({ item, handleFunction = () => { },
                             </ul>
                         </div>
                     </div>
-                    <div className={`w-full h-[2px] duration-500 ${about ? 'bg-[#AAA]' : 'bg-[#F7F7F1]'}`}>
+                    <div className={`w-full h-[2px] duration-500 ${about && index % 2 ? 'hidden sm:block' : 'block'} ${about ? 'bg-[#AAA]' : 'bg-[#F7F7F1]'}`}>
                         {!about && <div className={`w-0 h-full duration-1000 ease-in-out ${!faq && 'group-hover:bg-red-500 group-hover:w-full'}`}></div>}
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

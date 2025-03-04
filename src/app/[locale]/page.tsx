@@ -42,8 +42,6 @@ export const metadata: Metadata = {
   generator:
     'saytlarin hazilanmasi,veb-sayt,veb-saytlarin hazilanmasi,Saytlarin yigilmasi',
 };
-
-
 const page = () => {
   const t = useTranslations();
   return (

@@ -1,8 +1,6 @@
 {
     "header": {
         "list": {
-            "services": "Services",
-            "work": "Work",
             "about": "About",
             "contact": "Contact",
             "home_page": "Home Page"
@@ -348,6 +346,32 @@
             {
                 "title": "AUTHENTIC",
                 "content": "In every interaction and solution, we etch the imprint of authenticity, a testament to our dedication to fostering accurate connections. Our ethos? To weave sincerity into every pixel, building bridges that stand the test of time and nurture lasting relationships."
+            }
+        ],
+        "about_us": [
+            {
+                "title": "Curiosity",
+                "content": "We're the idea generators, riding waves of innovation. Challenging assumptions, we ignite curiosity and spark discovery."
+            },
+            {
+                "title": "Communication",
+                "content": "We are available to cater to your demands anytime so you do not have to worry about time zones. So wherever you are in the world, you will feel like we are right around the corner."
+            },
+            {
+                "title": "Transparency",
+                "content": "Everything we do at Drafts is done through a methodological approach because we strongly believe in transparency. We keep our clients in the loop regarding every step of the project."
+            },
+            {
+                "title": "Flexibility",
+                "content": "We stick to a fixed and budget-friendly. There are no hidden costs. Our team religiously follow deadlines and promises. Our end goal is to satisfy the demands of our clients."
+            },
+            {
+                "title": "Complexity",
+                "content": "We're fueled by the thrill of unraveling puzzles, turning knots of complexity into golden opportunities. With each challenge conquered, we redefine what's possible, transforming obstacles into stepping stones toward greatness."
+            },
+            {
+                "title": "Deliverables",
+                "content": "From strategy to reality, our unified team guides your project with unwavering expertise and flawless execution. With every step, we synchronize efforts, ensuring a journey that's as cohesive as it is exceptional."
             }
         ]
     }
